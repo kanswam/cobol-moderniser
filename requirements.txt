@@ -1,0 +1,9 @@
+# COBOL Moderniser — Dependencies
+# The core pipeline runs entirely on Python's standard library.
+# Python 3.8+ required.
+#
+# The only external dependency is the Anthropic SDK, used by
+# Agent 2 (Logic Extractor) to generate the business rules document.
+# If running with --no-ai flag, this is not required.
+ 
+anthropic>=0.20.0
