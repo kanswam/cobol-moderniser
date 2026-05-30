@@ -169,7 +169,6 @@ Open an issue to discuss before submitting a PR.
 - [ ] Build a CLI: `cobol-moderniser migrate input.cbl --target python`
 - [ ] Hosted demo (upload COBOL, get Python back in browser)
 - [ ] Publish results and validation methodology as a technical paper
-
 ---
 
 ## Licence
