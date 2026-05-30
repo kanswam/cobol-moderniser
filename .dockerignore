@@ -1,0 +1,48 @@
+# =============================================================================
+# Docker Ignore — files excluded from the build context
+# =============================================================================
+
+# Git
+.git/
+.gitignore
+
+# Python cache / compiled
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Secrets / local environment
+.env
+.env.*
+
+# Generated output (re-created at runtime)
+output/*.py
+output/*.md
+output/*.json
+tests/generated/*.json
+tests/generated/*.md
+
+# IDE / editor files
+.idea/
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Documentation (not needed inside container)
+README.md
+CONTRIBUTING.md
+LICENSE
+docs/*.md
+
+# CI/CD configs
+.github/
