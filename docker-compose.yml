@@ -1,0 +1,57 @@
+# =============================================================================
+# COBOL Moderniser — Docker Compose Configuration
+# =============================================================================
+# Provides two services for running the migration pipeline:
+#
+#   1. cobol-moderniser      — offline mode, no API key required
+#   2. cobol-moderniser-ai   — AI mode, pulls ANTHROPIC_API_KEY from .env file
+#
+# Usage:
+#   docker compose up cobol-moderniser          # offline mode
+#   docker compose up cobol-moderniser-ai       # AI mode (needs .env file)
+# =============================================================================
+
+services:
+  # ---------------------------------------------------------------------------
+  # Offline mode — runs the full pipeline except Agent 2 (business-rules AI).
+  # No external credentials required.  Ideal for CI/CD or air-gapped networks.
+  # ---------------------------------------------------------------------------
+  cobol-moderniser:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: cobol-moderniser:0.1.0
+    container_name: cobol-moderniser-offline
+    # Mount local COBOL source files into the container
+    volumes:
+      - ./sample_cobol:/app/sample_cobol:ro
+      - ./output:/app/output
+    # Override default CMD to pass explicit flags
+    command:
+      - "--no-ai"
+      - "--input"
+      - "sample_cobol/mortgage_calc.cbl"
+    # Ensure output directory is writable
+    user: "1000:1000"
+
+  # ---------------------------------------------------------------------------
+  # AI mode — runs the full 5-agent pipeline including Agent 2 which calls the
+  # Anthropic API for business-rule extraction.  Requires a .env file with
+  # ANTHROPIC_API_KEY set.
+  # ---------------------------------------------------------------------------
+  cobol-moderniser-ai:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: cobol-moderniser:0.1.0
+    container_name: cobol-moderniser-ai
+    volumes:
+      - ./sample_cobol:/app/sample_cobol:ro
+      - ./output:/app/output
+    command:
+      - "--input"
+      - "sample_cobol/mortgage_calc.cbl"
+    # Load API key from .env file (do NOT commit .env to Git)
+    env_file:
+      - .env
+    user: "1000:1000"
