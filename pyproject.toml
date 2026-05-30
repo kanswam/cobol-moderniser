@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cobol-moderniser"
+version = "0.1.0"
+description = "Autonomous migration of legacy COBOL to modern Python"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "MIT"}
+dependencies = ["anthropic>=0.20.0"]
+
+[project.scripts]
+cobol-moderniser = "cobol_moderniser.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/kanswam/cobol-moderniser"
