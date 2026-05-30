@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+
+# Environment variables
+.env
+.env.*
+
+# Generated files (produced by pipeline runs)
+agents/parser_output.json
+agents/logic_output.json
+tests/generated/*.json
+output/*.py
+output/validation_report.*
+
+# Keep directory structure
+!output/.gitkeep
+!tests/generated/.gitkeep
+
+# macOS
+.DS_Store
+
+# Python packaging
+*.egg-info/
+dist/
+build/
+*.egg
