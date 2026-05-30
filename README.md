@@ -250,6 +250,11 @@ Open an issue to discuss before submitting a PR.
 - [x] Complete the 5-agent pipeline for mortgage amortisation
 - [x] Add support for COBOL copybooks and nested data structures
 - [x] Build a CLI: `cobol-moderniser migrate input.cbl --target python`
+- [ ] Agent 6 — Simplifier: identifies redundant logic, separates 
+      business rules from calculation engine, produces clean simplified code
+- [ ] Agent 7 — Externaliser: expresses business rules as human-readable 
+      YAML/JSON configuration — modifiable by business analysts without 
+      touching code
 - [ ] Add dependency visualiser (Mermaid diagrams)
 - [ ] Support Java target language
 - [ ] Fine-tuned LLM for COBOL-specific accuracy
