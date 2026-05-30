@@ -1,0 +1,5200 @@
+[
+  {
+    "id": "STA_001",
+    "description": "Standard \u00a3200k fixed rate month 1",
+    "category": "standard",
+    "inputs": {
+      "principal": 200000.0,
+      "annual_rate": 0.0525,
+      "term_years": 25,
+      "repayment_month": 1,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 1198.5,
+      "total_repayable": 359550.0,
+      "total_interest": 159550.0,
+      "month_interest": 875.0,
+      "month_principal": 323.5,
+      "closing_balance": 199676.5,
+      "penalty": 5990.3
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "STA_002",
+    "description": "Standard \u00a3200k fixed rate month 12",
+    "category": "standard",
+    "inputs": {
+      "principal": 200000.0,
+      "annual_rate": 0.0525,
+      "term_years": 25,
+      "repayment_month": 12,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 1198.5,
+      "total_repayable": 359550.0,
+      "total_interest": 159550.0,
+      "month_interest": 859.09,
+      "month_principal": 339.41,
+      "closing_balance": 196023.2,
+      "penalty": 5880.7
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "STA_003",
+    "description": "Standard \u00a3200k fixed rate month 36 (penalty boundary)",
+    "category": "standard",
+    "inputs": {
+      "principal": 200000.0,
+      "annual_rate": 0.0525,
+      "term_years": 25,
+      "repayment_month": 36,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 1198.5,
+      "total_repayable": 359550.0,
+      "total_interest": 159550.0,
+      "month_interest": 821.6,
+      "month_principal": 376.9,
+      "closing_balance": 187416.49,
+      "penalty": 5622.49
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "STA_004",
+    "description": "Standard \u00a3200k fixed rate month 37 (no penalty)",
+    "category": "standard",
+    "inputs": {
+      "principal": 200000.0,
+      "annual_rate": 0.0525,
+      "term_years": 25,
+      "repayment_month": 37,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 1198.5,
+      "total_repayable": 359550.0,
+      "total_interest": 159550.0,
+      "month_interest": 819.95,
+      "month_principal": 378.55,
+      "closing_balance": 187037.94,
+      "penalty": 0.0
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "STA_005",
+    "description": "Standard \u00a3350k at 3.9% over 30y month 1",
+    "category": "standard",
+    "inputs": {
+      "principal": 350000.0,
+      "annual_rate": 0.039,
+      "term_years": 30,
+      "repayment_month": 1,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 1650.84,
+      "total_repayable": 594302.4,
+      "total_interest": 244302.4,
+      "month_interest": 1137.5,
+      "month_principal": 513.34,
+      "closing_balance": 349486.66,
+      "penalty": 10484.6
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "STA_006",
+    "description": "Standard \u00a3350k variable month 180",
+    "category": "standard",
+    "inputs": {
+      "principal": 350000.0,
+      "annual_rate": 0.039,
+      "term_years": 30,
+      "repayment_month": 180,
+      "rate_type": "V"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 1650.84,
+      "total_repayable": 594302.4,
+      "total_interest": 244302.4,
+      "month_interest": 733.26,
+      "month_principal": 917.58,
+      "closing_balance": 224699.42,
+      "penalty": 0.0
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "STA_007",
+    "description": "Standard \u00a3100k at 2.5% over 15y month 1",
+    "category": "standard",
+    "inputs": {
+      "principal": 100000.0,
+      "annual_rate": 0.025,
+      "term_years": 15,
+      "repayment_month": 1,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 666.79,
+      "total_repayable": 120022.2,
+      "total_interest": 20022.2,
+      "month_interest": 208.33,
+      "month_principal": 458.46,
+      "closing_balance": 99541.54,
+      "penalty": 2986.25
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "STA_008",
+    "description": "Standard \u00a3500k at 4.5% over 20y month 60",
+    "category": "standard",
+    "inputs": {
+      "principal": 500000.0,
+      "annual_rate": 0.045,
+      "term_years": 20,
+      "repayment_month": 60,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 3163.25,
+      "total_repayable": 759180.0,
+      "total_interest": 259180.0,
+      "month_interest": 1556.65,
+      "month_principal": 1606.6,
+      "closing_balance": 413499.73,
+      "penalty": 0.0
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "EDG_001",
+    "description": "Very small principal \u00a31k at 0.5% over 40y",
+    "category": "edge",
+    "inputs": {
+      "principal": 1000.0,
+      "annual_rate": 0.005,
+      "term_years": 40,
+      "repayment_month": 1,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 2.3,
+      "total_repayable": 1104.0,
+      "total_interest": 104.0,
+      "month_interest": 0.42,
+      "month_principal": 1.88,
+      "closing_balance": 998.12,
+      "penalty": 29.94
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "EDG_002",
+    "description": "Max principal min term month 1",
+    "category": "edge",
+    "inputs": {
+      "principal": 9999999.99,
+      "annual_rate": 0.15,
+      "term_years": 1,
+      "repayment_month": 1,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 902583.12,
+      "total_repayable": 10830997.44,
+      "total_interest": 830997.45,
+      "month_interest": 125000.0,
+      "month_principal": 777583.12,
+      "closing_balance": 9222416.87,
+      "penalty": 276672.51
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "EDG_003",
+    "description": "Max principal min term month 12 (final)",
+    "category": "edge",
+    "inputs": {
+      "principal": 9999999.99,
+      "annual_rate": 0.15,
+      "term_years": 1,
+      "repayment_month": 12,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 902583.12,
+      "total_repayable": 10830997.44,
+      "total_interest": 830997.45,
+      "month_interest": 11143.0,
+      "month_principal": 891440.12,
+      "closing_balance": 0.03,
+      "penalty": 0.0
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "EDG_004",
+    "description": "Very low rate 1% variable final month",
+    "category": "edge",
+    "inputs": {
+      "principal": 150000.0,
+      "annual_rate": 0.01,
+      "term_years": 35,
+      "repayment_month": 420,
+      "rate_type": "V"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 423.43,
+      "total_repayable": 177840.6,
+      "total_interest": 27840.6,
+      "month_interest": 0.35,
+      "month_principal": 423.08,
+      "closing_balance": -0.66,
+      "penalty": 0.0
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "EDG_005",
+    "description": "High rate 7.5% month 1",
+    "category": "edge",
+    "inputs": {
+      "principal": 300000.0,
+      "annual_rate": 0.075,
+      "term_years": 10,
+      "repayment_month": 1,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 3561.05,
+      "total_repayable": 427326.0,
+      "total_interest": 127326.0,
+      "month_interest": 1875.0,
+      "month_principal": 1686.05,
+      "closing_balance": 298313.95,
+      "penalty": 8949.42
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "EDG_006",
+    "description": "High rate 7.5% final month",
+    "category": "edge",
+    "inputs": {
+      "principal": 300000.0,
+      "annual_rate": 0.075,
+      "term_years": 10,
+      "repayment_month": 120,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 3561.05,
+      "total_repayable": 427326.0,
+      "total_interest": 127326.0,
+      "month_interest": 22.12,
+      "month_principal": 3538.93,
+      "closing_balance": 0.53,
+      "penalty": 0.0
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "INV_001",
+    "description": "Negative principal",
+    "category": "invalid",
+    "inputs": {
+      "principal": -100000.0,
+      "annual_rate": 0.05,
+      "term_years": 25,
+      "repayment_month": 1,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 1,
+      "monthly_payment": 0.0,
+      "total_repayable": 0.0,
+      "total_interest": 0.0,
+      "month_interest": 0.0,
+      "month_principal": 0.0,
+      "closing_balance": 0.0,
+      "penalty": 0.0
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "INV_002",
+    "description": "Zero principal",
+    "category": "invalid",
+    "inputs": {
+      "principal": 0.0,
+      "annual_rate": 0.05,
+      "term_years": 25,
+      "repayment_month": 1,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 1,
+      "monthly_payment": 0.0,
+      "total_repayable": 0.0,
+      "total_interest": 0.0,
+      "month_interest": 0.0,
+      "month_principal": 0.0,
+      "closing_balance": 0.0,
+      "penalty": 0.0
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "INV_003",
+    "description": "Zero interest rate",
+    "category": "invalid",
+    "inputs": {
+      "principal": 200000.0,
+      "annual_rate": 0.0,
+      "term_years": 25,
+      "repayment_month": 1,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 2,
+      "monthly_payment": 0.0,
+      "total_repayable": 0.0,
+      "total_interest": 0.0,
+      "month_interest": 0.0,
+      "month_principal": 0.0,
+      "closing_balance": 0.0,
+      "penalty": 0.0
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "INV_004",
+    "description": "Negative interest rate",
+    "category": "invalid",
+    "inputs": {
+      "principal": 200000.0,
+      "annual_rate": -0.05,
+      "term_years": 25,
+      "repayment_month": 1,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 2,
+      "monthly_payment": 0.0,
+      "total_repayable": 0.0,
+      "total_interest": 0.0,
+      "month_interest": 0.0,
+      "month_principal": 0.0,
+      "closing_balance": 0.0,
+      "penalty": 0.0
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "INV_005",
+    "description": "Zero term years",
+    "category": "invalid",
+    "inputs": {
+      "principal": 200000.0,
+      "annual_rate": 0.05,
+      "term_years": 0,
+      "repayment_month": 1,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 3,
+      "monthly_payment": 0.0,
+      "total_repayable": 0.0,
+      "total_interest": 0.0,
+      "month_interest": 0.0,
+      "month_principal": 0.0,
+      "closing_balance": 0.0,
+      "penalty": 0.0
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "INV_006",
+    "description": "Zero repayment month",
+    "category": "invalid",
+    "inputs": {
+      "principal": 200000.0,
+      "annual_rate": 0.05,
+      "term_years": 25,
+      "repayment_month": 0,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 4,
+      "monthly_payment": 0.0,
+      "total_repayable": 0.0,
+      "total_interest": 0.0,
+      "month_interest": 0.0,
+      "month_principal": 0.0,
+      "closing_balance": 0.0,
+      "penalty": 0.0
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "INV_007",
+    "description": "Repayment month beyond term",
+    "category": "invalid",
+    "inputs": {
+      "principal": 200000.0,
+      "annual_rate": 0.05,
+      "term_years": 25,
+      "repayment_month": 301,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 4,
+      "monthly_payment": 0.0,
+      "total_repayable": 0.0,
+      "total_interest": 0.0,
+      "month_interest": 0.0,
+      "month_principal": 0.0,
+      "closing_balance": 0.0,
+      "penalty": 0.0
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "INV_008",
+    "description": "Invalid rate type",
+    "category": "invalid",
+    "inputs": {
+      "principal": 200000.0,
+      "annual_rate": 0.05,
+      "term_years": 25,
+      "repayment_month": 1,
+      "rate_type": "X"
+    },
+    "expected": {
+      "return_code": 4,
+      "monthly_payment": 0.0,
+      "total_repayable": 0.0,
+      "total_interest": 0.0,
+      "month_interest": 0.0,
+      "month_principal": 0.0,
+      "closing_balance": 0.0,
+      "penalty": 0.0
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "FIN_001",
+    "description": "Final month \u00a3200k 5.25% 25y",
+    "category": "final_month",
+    "inputs": {
+      "principal": 200000.0,
+      "annual_rate": 0.0525,
+      "term_years": 25,
+      "repayment_month": 300,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 1198.5,
+      "total_repayable": 359550.0,
+      "total_interest": 159550.0,
+      "month_interest": 5.21,
+      "month_principal": 1193.29,
+      "closing_balance": -2.73,
+      "penalty": 0.0
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "FIN_002",
+    "description": "Final month \u00a3100k 3% 10y variable",
+    "category": "final_month",
+    "inputs": {
+      "principal": 100000.0,
+      "annual_rate": 0.03,
+      "term_years": 10,
+      "repayment_month": 120,
+      "rate_type": "V"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 965.61,
+      "total_repayable": 115873.2,
+      "total_interest": 15873.2,
+      "month_interest": 2.41,
+      "month_principal": 963.2,
+      "closing_balance": -0.29,
+      "penalty": 0.0
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "FIN_003",
+    "description": "Final month \u00a3750k 4% 30y",
+    "category": "final_month",
+    "inputs": {
+      "principal": 750000.0,
+      "annual_rate": 0.04,
+      "term_years": 30,
+      "repayment_month": 360,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 3580.61,
+      "total_repayable": 1289019.6,
+      "total_interest": 539019.6,
+      "month_interest": 11.91,
+      "month_principal": 3568.7,
+      "closing_balance": 3.25,
+      "penalty": 0.0
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "FIN_004",
+    "description": "Final month \u00a350k 6% 5y",
+    "category": "final_month",
+    "inputs": {
+      "principal": 50000.0,
+      "annual_rate": 0.06,
+      "term_years": 5,
+      "repayment_month": 60,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 966.64,
+      "total_repayable": 57998.4,
+      "total_interest": 7998.4,
+      "month_interest": 4.81,
+      "month_principal": 961.83,
+      "closing_balance": 0.03,
+      "penalty": 0.0
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "STR_001",
+    "description": "Stress small principal \u00a31,000.00 at 0.50% over 40y month 1",
+    "category": "stress",
+    "inputs": {
+      "principal": 1000.0,
+      "annual_rate": 0.005,
+      "term_years": 40,
+      "repayment_month": 1,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 2.3,
+      "total_repayable": 1104.0,
+      "total_interest": 104.0,
+      "month_interest": 0.42,
+      "month_principal": 1.88,
+      "closing_balance": 998.12,
+      "penalty": 29.94
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "STR_002",
+    "description": "Stress small principal \u00a31,000.00 at 0.50% over 40y month 480",
+    "category": "stress",
+    "inputs": {
+      "principal": 1000.0,
+      "annual_rate": 0.005,
+      "term_years": 40,
+      "repayment_month": 480,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 2.3,
+      "total_repayable": 1104.0,
+      "total_interest": 104.0,
+      "month_interest": 0.0,
+      "month_principal": 2.3,
+      "closing_balance": -0.5,
+      "penalty": 0.0
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "STR_003",
+    "description": "Stress small principal \u00a31,000.00 at 0.50% over 40y month 1",
+    "category": "stress",
+    "inputs": {
+      "principal": 1000.0,
+      "annual_rate": 0.005,
+      "term_years": 40,
+      "repayment_month": 1,
+      "rate_type": "V"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 2.3,
+      "total_repayable": 1104.0,
+      "total_interest": 104.0,
+      "month_interest": 0.42,
+      "month_principal": 1.88,
+      "closing_balance": 998.12,
+      "penalty": 0.0
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "STR_004",
+    "description": "Stress small principal \u00a31,000.00 at 0.50% over 40y month 480",
+    "category": "stress",
+    "inputs": {
+      "principal": 1000.0,
+      "annual_rate": 0.005,
+      "term_years": 40,
+      "repayment_month": 480,
+      "rate_type": "V"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 2.3,
+      "total_repayable": 1104.0,
+      "total_interest": 104.0,
+      "month_interest": 0.0,
+      "month_principal": 2.3,
+      "closing_balance": -0.5,
+      "penalty": 0.0
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "STR_005",
+    "description": "Stress small principal \u00a35,000.00 at 1.00% over 35y month 1",
+    "category": "stress",
+    "inputs": {
+      "principal": 5000.0,
+      "annual_rate": 0.01,
+      "term_years": 35,
+      "repayment_month": 1,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 14.11,
+      "total_repayable": 5926.2,
+      "total_interest": 926.2,
+      "month_interest": 4.17,
+      "month_principal": 9.94,
+      "closing_balance": 4990.06,
+      "penalty": 149.7
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "STR_006",
+    "description": "Stress small principal \u00a35,000.00 at 1.00% over 35y month 420",
+    "category": "stress",
+    "inputs": {
+      "principal": 5000.0,
+      "annual_rate": 0.01,
+      "term_years": 35,
+      "repayment_month": 420,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 14.11,
+      "total_repayable": 5926.2,
+      "total_interest": 926.2,
+      "month_interest": 0.01,
+      "month_principal": 14.1,
+      "closing_balance": 2.25,
+      "penalty": 0.0
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "STR_007",
+    "description": "Stress small principal \u00a310,000.00 at 2.50% over 40y month 1",
+    "category": "stress",
+    "inputs": {
+      "principal": 10000.0,
+      "annual_rate": 0.025,
+      "term_years": 40,
+      "repayment_month": 1,
+      "rate_type": "V"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 32.98,
+      "total_repayable": 15830.4,
+      "total_interest": 5830.4,
+      "month_interest": 20.83,
+      "month_principal": 12.15,
+      "closing_balance": 9987.85,
+      "penalty": 0.0
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "STR_008",
+    "description": "Stress small principal \u00a310,000.00 at 2.50% over 40y month 480",
+    "category": "stress",
+    "inputs": {
+      "principal": 10000.0,
+      "annual_rate": 0.025,
+      "term_years": 40,
+      "repayment_month": 480,
+      "rate_type": "V"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 32.98,
+      "total_repayable": 15830.4,
+      "total_interest": 5830.4,
+      "month_interest": 0.06,
+      "month_principal": 32.92,
+      "closing_balance": -1.83,
+      "penalty": 0.0
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "STR_009",
+    "description": "Stress large principal \u00a39,999,999.99 at 15.0% over 1y month 1",
+    "category": "stress",
+    "inputs": {
+      "principal": 9999999.99,
+      "annual_rate": 0.15,
+      "term_years": 1,
+      "repayment_month": 1,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 902583.12,
+      "total_repayable": 10830997.44,
+      "total_interest": 830997.45,
+      "month_interest": 125000.0,
+      "month_principal": 777583.12,
+      "closing_balance": 9222416.87,
+      "penalty": 276672.51
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "STR_010",
+    "description": "Stress large principal \u00a39,999,999.99 at 15.0% over 1y month 6",
+    "category": "stress",
+    "inputs": {
+      "principal": 9999999.99,
+      "annual_rate": 0.15,
+      "term_years": 1,
+      "repayment_month": 6,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 902583.12,
+      "total_repayable": 10830997.44,
+      "total_interest": 830997.45,
+      "month_interest": 75170.8,
+      "month_principal": 827412.32,
+      "closing_balance": 5186251.59,
+      "penalty": 155587.55
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "STR_011",
+    "description": "Stress large principal \u00a39,999,999.99 at 15.0% over 1y month 12",
+    "category": "stress",
+    "inputs": {
+      "principal": 9999999.99,
+      "annual_rate": 0.15,
+      "term_years": 1,
+      "repayment_month": 12,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 902583.12,
+      "total_repayable": 10830997.44,
+      "total_interest": 830997.45,
+      "month_interest": 11143.0,
+      "month_principal": 891440.12,
+      "closing_balance": 0.03,
+      "penalty": 0.0
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "STR_012",
+    "description": "Stress large principal \u00a39,999,999.99 at 10.0% over 2y month 1",
+    "category": "stress",
+    "inputs": {
+      "principal": 9999999.99,
+      "annual_rate": 0.1,
+      "term_years": 2,
+      "repayment_month": 1,
+      "rate_type": "V"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 461449.26,
+      "total_repayable": 11074782.24,
+      "total_interest": 1074782.25,
+      "month_interest": 83333.33,
+      "month_principal": 378115.93,
+      "closing_balance": 9621884.06,
+      "penalty": 0.0
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "STR_013",
+    "description": "Stress large principal \u00a39,999,999.99 at 10.0% over 2y month 6",
+    "category": "stress",
+    "inputs": {
+      "principal": 9999999.99,
+      "annual_rate": 0.1,
+      "term_years": 2,
+      "repayment_month": 6,
+      "rate_type": "V"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 461449.26,
+      "total_repayable": 11074782.24,
+      "total_interest": 1074782.25,
+      "month_interest": 67313.72,
+      "month_principal": 394135.54,
+      "closing_balance": 7683511.47,
+      "penalty": 0.0
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "STR_014",
+    "description": "Stress large principal \u00a39,999,999.99 at 10.0% over 2y month 24",
+    "category": "stress",
+    "inputs": {
+      "principal": 9999999.99,
+      "annual_rate": 0.1,
+      "term_years": 2,
+      "repayment_month": 24,
+      "rate_type": "V"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 461449.26,
+      "total_repayable": 11074782.24,
+      "total_interest": 1074782.25,
+      "month_interest": 3813.63,
+      "month_principal": 457635.63,
+      "closing_balance": 0.07,
+      "penalty": 0.0
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "STR_015",
+    "description": "Stress large principal \u00a37,500,000.00 at 12.0% over 1y month 1",
+    "category": "stress",
+    "inputs": {
+      "principal": 7500000.0,
+      "annual_rate": 0.12,
+      "term_years": 1,
+      "repayment_month": 1,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 666365.92,
+      "total_repayable": 7996391.04,
+      "total_interest": 496391.04,
+      "month_interest": 75000.0,
+      "month_principal": 591365.92,
+      "closing_balance": 6908634.08,
+      "penalty": 207259.02
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "STR_016",
+    "description": "Stress large principal \u00a37,500,000.00 at 12.0% over 1y month 6",
+    "category": "stress",
+    "inputs": {
+      "principal": 7500000.0,
+      "annual_rate": 0.12,
+      "term_years": 1,
+      "repayment_month": 6,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 666365.92,
+      "total_repayable": 7996391.04,
+      "total_interest": 496391.04,
+      "month_interest": 44834.39,
+      "month_principal": 621531.53,
+      "closing_balance": 3861907.95,
+      "penalty": 115857.24
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "STR_017",
+    "description": "Stress large principal \u00a37,500,000.00 at 12.0% over 1y month 12",
+    "category": "stress",
+    "inputs": {
+      "principal": 7500000.0,
+      "annual_rate": 0.12,
+      "term_years": 1,
+      "repayment_month": 12,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 666365.92,
+      "total_repayable": 7996391.04,
+      "total_interest": 496391.04,
+      "month_interest": 6597.68,
+      "month_principal": 659768.24,
+      "closing_balance": -0.07,
+      "penalty": -0.0
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "STR_018",
+    "description": "Stress 3dp rate 3.300% term 5y month 1",
+    "category": "stress",
+    "inputs": {
+      "principal": 200000.0,
+      "annual_rate": 0.033,
+      "term_years": 5,
+      "repayment_month": 1,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 3620.46,
+      "total_repayable": 217227.6,
+      "total_interest": 17227.6,
+      "month_interest": 550.0,
+      "month_principal": 3070.46,
+      "closing_balance": 196929.54,
+      "penalty": 5907.89
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "STR_019",
+    "description": "Stress 3dp rate 3.300% term 10y month 1",
+    "category": "stress",
+    "inputs": {
+      "principal": 200000.0,
+      "annual_rate": 0.033,
+      "term_years": 10,
+      "repayment_month": 1,
+      "rate_type": "V"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 1959.03,
+      "total_repayable": 235083.6,
+      "total_interest": 35083.6,
+      "month_interest": 550.0,
+      "month_principal": 1409.03,
+      "closing_balance": 198590.97,
+      "penalty": 0.0
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "STR_020",
+    "description": "Stress 3dp rate 3.300% term 15y month 1",
+    "category": "stress",
+    "inputs": {
+      "principal": 200000.0,
+      "annual_rate": 0.033,
+      "term_years": 15,
+      "repayment_month": 1,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 1410.2,
+      "total_repayable": 253836.0,
+      "total_interest": 53836.0,
+      "month_interest": 550.0,
+      "month_principal": 860.2,
+      "closing_balance": 199139.8,
+      "penalty": 5974.19
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "STR_021",
+    "description": "Stress 3dp rate 3.300% term 20y month 1",
+    "category": "stress",
+    "inputs": {
+      "principal": 200000.0,
+      "annual_rate": 0.033,
+      "term_years": 20,
+      "repayment_month": 1,
+      "rate_type": "V"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 1139.47,
+      "total_repayable": 273472.8,
+      "total_interest": 73472.8,
+      "month_interest": 550.0,
+      "month_principal": 589.47,
+      "closing_balance": 199410.53,
+      "penalty": 0.0
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "STR_022",
+    "description": "Stress 3dp rate 4.700% term 5y month 1",
+    "category": "stress",
+    "inputs": {
+      "principal": 200000.0,
+      "annual_rate": 0.047,
+      "term_years": 5,
+      "repayment_month": 1,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 3746.82,
+      "total_repayable": 224809.2,
+      "total_interest": 24809.2,
+      "month_interest": 783.33,
+      "month_principal": 2963.49,
+      "closing_balance": 197036.51,
+      "penalty": 5911.1
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "STR_023",
+    "description": "Stress 3dp rate 4.700% term 25y month 1",
+    "category": "stress",
+    "inputs": {
+      "principal": 200000.0,
+      "annual_rate": 0.047,
+      "term_years": 25,
+      "repayment_month": 1,
+      "rate_type": "V"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 1134.49,
+      "total_repayable": 340347.0,
+      "total_interest": 140347.0,
+      "month_interest": 783.33,
+      "month_principal": 351.16,
+      "closing_balance": 199648.84,
+      "penalty": 0.0
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "STR_024",
+    "description": "Stress 3dp rate 4.700% term 30y month 1",
+    "category": "stress",
+    "inputs": {
+      "principal": 200000.0,
+      "annual_rate": 0.047,
+      "term_years": 30,
+      "repayment_month": 1,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 1037.28,
+      "total_repayable": 373420.8,
+      "total_interest": 173420.8,
+      "month_interest": 783.33,
+      "month_principal": 253.95,
+      "closing_balance": 199746.05,
+      "penalty": 5992.38
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "STR_025",
+    "description": "Stress 3dp rate 9.900% term 5y month 1",
+    "category": "stress",
+    "inputs": {
+      "principal": 200000.0,
+      "annual_rate": 0.099,
+      "term_years": 5,
+      "repayment_month": 1,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 4239.57,
+      "total_repayable": 254374.2,
+      "total_interest": 54374.2,
+      "month_interest": 1650.0,
+      "month_principal": 2589.57,
+      "closing_balance": 197410.43,
+      "penalty": 5922.31
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "STR_026",
+    "description": "Stress 3dp rate 9.900% term 35y month 1",
+    "category": "stress",
+    "inputs": {
+      "principal": 200000.0,
+      "annual_rate": 0.099,
+      "term_years": 35,
+      "repayment_month": 1,
+      "rate_type": "V"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 1704.05,
+      "total_repayable": 715701.0,
+      "total_interest": 515701.0,
+      "month_interest": 1650.0,
+      "month_principal": 54.05,
+      "closing_balance": 199945.95,
+      "penalty": 0.0
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "STR_027",
+    "description": "Stress 3dp rate 9.900% term 40y month 1",
+    "category": "stress",
+    "inputs": {
+      "principal": 200000.0,
+      "annual_rate": 0.099,
+      "term_years": 40,
+      "repayment_month": 1,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 1682.6,
+      "total_repayable": 807648.0,
+      "total_interest": 607648.0,
+      "month_interest": 1650.0,
+      "month_principal": 32.6,
+      "closing_balance": 199967.4,
+      "penalty": 5999.02
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "STR_028",
+    "description": "Stress padding 28",
+    "category": "stress",
+    "inputs": {
+      "principal": 164000.0,
+      "annual_rate": 0.091,
+      "term_years": 20,
+      "repayment_month": 1,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 1486.11,
+      "total_repayable": 356666.4,
+      "total_interest": 192666.4,
+      "month_interest": 1243.67,
+      "month_principal": 242.44,
+      "closing_balance": 163757.56,
+      "penalty": 4912.73
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "STR_029",
+    "description": "Stress padding 29",
+    "category": "stress",
+    "inputs": {
+      "principal": 164500.0,
+      "annual_rate": 0.093,
+      "term_years": 20,
+      "repayment_month": 1,
+      "rate_type": "V"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 1511.94,
+      "total_repayable": 362865.6,
+      "total_interest": 198365.6,
+      "month_interest": 1274.88,
+      "month_principal": 237.06,
+      "closing_balance": 164262.94,
+      "penalty": 0.0
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "STR_030",
+    "description": "Stress padding 30",
+    "category": "stress",
+    "inputs": {
+      "principal": 165000.0,
+      "annual_rate": 0.095,
+      "term_years": 20,
+      "repayment_month": 1,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 1538.02,
+      "total_repayable": 369124.8,
+      "total_interest": 204124.8,
+      "month_interest": 1306.25,
+      "month_principal": 231.77,
+      "closing_balance": 164768.23,
+      "penalty": 4943.05
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "AMO_001",
+    "description": "Amortisation \u00a3200k 5.25% 25y month 12",
+    "category": "amortisation",
+    "inputs": {
+      "principal": 200000.0,
+      "annual_rate": 0.0525,
+      "term_years": 25,
+      "repayment_month": 12,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 1198.5,
+      "total_repayable": 359550.0,
+      "total_interest": 159550.0,
+      "month_interest": 859.09,
+      "month_principal": 339.41,
+      "closing_balance": 196023.2,
+      "penalty": 5880.7
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "AMO_002",
+    "description": "Amortisation \u00a3200k 5.25% 25y month 24",
+    "category": "amortisation",
+    "inputs": {
+      "principal": 200000.0,
+      "annual_rate": 0.0525,
+      "term_years": 25,
+      "repayment_month": 24,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 1198.5,
+      "total_repayable": 359550.0,
+      "total_interest": 159550.0,
+      "month_interest": 840.83,
+      "month_principal": 357.67,
+      "closing_balance": 191832.53,
+      "penalty": 5754.98
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "AMO_003",
+    "description": "Amortisation \u00a3200k 5.25% 25y month 36",
+    "category": "amortisation",
+    "inputs": {
+      "principal": 200000.0,
+      "annual_rate": 0.0525,
+      "term_years": 25,
+      "repayment_month": 36,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 1198.5,
+      "total_repayable": 359550.0,
+      "total_interest": 159550.0,
+      "month_interest": 821.6,
+      "month_principal": 376.9,
+      "closing_balance": 187416.49,
+      "penalty": 5622.49
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "AMO_004",
+    "description": "Amortisation \u00a3200k 5.25% 25y month 48",
+    "category": "amortisation",
+    "inputs": {
+      "principal": 200000.0,
+      "annual_rate": 0.0525,
+      "term_years": 25,
+      "repayment_month": 48,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 1198.5,
+      "total_repayable": 359550.0,
+      "total_interest": 159550.0,
+      "month_interest": 801.33,
+      "month_principal": 397.17,
+      "closing_balance": 182762.95,
+      "penalty": 0.0
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "AMO_005",
+    "description": "Amortisation \u00a3200k 5.25% 25y month 60",
+    "category": "amortisation",
+    "inputs": {
+      "principal": 200000.0,
+      "annual_rate": 0.0525,
+      "term_years": 25,
+      "repayment_month": 60,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 1198.5,
+      "total_repayable": 359550.0,
+      "total_interest": 159550.0,
+      "month_interest": 779.96,
+      "month_principal": 418.54,
+      "closing_balance": 177859.12,
+      "penalty": 0.0
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "AMO_006",
+    "description": "Amortisation \u00a3200k 5.25% 25y month 72",
+    "category": "amortisation",
+    "inputs": {
+      "principal": 200000.0,
+      "annual_rate": 0.0525,
+      "term_years": 25,
+      "repayment_month": 72,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 1198.5,
+      "total_repayable": 359550.0,
+      "total_interest": 159550.0,
+      "month_interest": 757.46,
+      "month_principal": 441.04,
+      "closing_balance": 172691.56,
+      "penalty": 0.0
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "AMO_007",
+    "description": "Amortisation \u00a3200k 5.25% 25y month 84",
+    "category": "amortisation",
+    "inputs": {
+      "principal": 200000.0,
+      "annual_rate": 0.0525,
+      "term_years": 25,
+      "repayment_month": 84,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 1198.5,
+      "total_repayable": 359550.0,
+      "total_interest": 159550.0,
+      "month_interest": 733.73,
+      "month_principal": 464.77,
+      "closing_balance": 167246.08,
+      "penalty": 0.0
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "AMO_008",
+    "description": "Amortisation \u00a3200k 5.25% 25y month 96",
+    "category": "amortisation",
+    "inputs": {
+      "principal": 200000.0,
+      "annual_rate": 0.0525,
+      "term_years": 25,
+      "repayment_month": 96,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 1198.5,
+      "total_repayable": 359550.0,
+      "total_interest": 159550.0,
+      "month_interest": 708.74,
+      "month_principal": 489.76,
+      "closing_balance": 161507.73,
+      "penalty": 0.0
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "AMO_009",
+    "description": "Amortisation \u00a3200k 5.25% 25y month 108",
+    "category": "amortisation",
+    "inputs": {
+      "principal": 200000.0,
+      "annual_rate": 0.0525,
+      "term_years": 25,
+      "repayment_month": 108,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 1198.5,
+      "total_repayable": 359550.0,
+      "total_interest": 159550.0,
+      "month_interest": 682.4,
+      "month_principal": 516.1,
+      "closing_balance": 155460.75,
+      "penalty": 0.0
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "AMO_010",
+    "description": "Amortisation \u00a3200k 5.25% 25y month 120",
+    "category": "amortisation",
+    "inputs": {
+      "principal": 200000.0,
+      "annual_rate": 0.0525,
+      "term_years": 25,
+      "repayment_month": 120,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 1198.5,
+      "total_repayable": 359550.0,
+      "total_interest": 159550.0,
+      "month_interest": 654.64,
+      "month_principal": 543.86,
+      "closing_balance": 149088.56,
+      "penalty": 0.0
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "AMO_011",
+    "description": "Amortisation \u00a3200k 5.25% 25y month 132",
+    "category": "amortisation",
+    "inputs": {
+      "principal": 200000.0,
+      "annual_rate": 0.0525,
+      "term_years": 25,
+      "repayment_month": 132,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 1198.5,
+      "total_repayable": 359550.0,
+      "total_interest": 159550.0,
+      "month_interest": 625.39,
+      "month_principal": 573.11,
+      "closing_balance": 142373.65,
+      "penalty": 0.0
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "AMO_012",
+    "description": "Amortisation \u00a3200k 5.25% 25y month 144",
+    "category": "amortisation",
+    "inputs": {
+      "principal": 200000.0,
+      "annual_rate": 0.0525,
+      "term_years": 25,
+      "repayment_month": 144,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 1198.5,
+      "total_repayable": 359550.0,
+      "total_interest": 159550.0,
+      "month_interest": 594.57,
+      "month_principal": 603.93,
+      "closing_balance": 135297.62,
+      "penalty": 0.0
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "AMO_013",
+    "description": "Amortisation \u00a3200k 5.25% 25y month 156",
+    "category": "amortisation",
+    "inputs": {
+      "principal": 200000.0,
+      "annual_rate": 0.0525,
+      "term_years": 25,
+      "repayment_month": 156,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 1198.5,
+      "total_repayable": 359550.0,
+      "total_interest": 159550.0,
+      "month_interest": 562.09,
+      "month_principal": 636.41,
+      "closing_balance": 127841.02,
+      "penalty": 0.0
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "AMO_014",
+    "description": "Amortisation \u00a3200k 5.25% 25y month 168",
+    "category": "amortisation",
+    "inputs": {
+      "principal": 200000.0,
+      "annual_rate": 0.0525,
+      "term_years": 25,
+      "repayment_month": 168,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 1198.5,
+      "total_repayable": 359550.0,
+      "total_interest": 159550.0,
+      "month_interest": 527.86,
+      "month_principal": 670.64,
+      "closing_balance": 119983.38,
+      "penalty": 0.0
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "AMO_015",
+    "description": "Amortisation \u00a3200k 5.25% 25y month 180",
+    "category": "amortisation",
+    "inputs": {
+      "principal": 200000.0,
+      "annual_rate": 0.0525,
+      "term_years": 25,
+      "repayment_month": 180,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 1198.5,
+      "total_repayable": 359550.0,
+      "total_interest": 159550.0,
+      "month_interest": 491.79,
+      "month_principal": 706.71,
+      "closing_balance": 111703.15,
+      "penalty": 0.0
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "AMO_016",
+    "description": "Amortisation \u00a3200k 5.25% 25y month 192",
+    "category": "amortisation",
+    "inputs": {
+      "principal": 200000.0,
+      "annual_rate": 0.0525,
+      "term_years": 25,
+      "repayment_month": 192,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 1198.5,
+      "total_repayable": 359550.0,
+      "total_interest": 159550.0,
+      "month_interest": 453.79,
+      "month_principal": 744.71,
+      "closing_balance": 102977.6,
+      "penalty": 0.0
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "AMO_017",
+    "description": "Amortisation \u00a3200k 5.25% 25y month 204",
+    "category": "amortisation",
+    "inputs": {
+      "principal": 200000.0,
+      "annual_rate": 0.0525,
+      "term_years": 25,
+      "repayment_month": 204,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 1198.5,
+      "total_repayable": 359550.0,
+      "total_interest": 159550.0,
+      "month_interest": 413.73,
+      "month_principal": 784.77,
+      "closing_balance": 93782.76,
+      "penalty": 0.0
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "AMO_018",
+    "description": "Amortisation \u00a3200k 5.25% 25y month 216",
+    "category": "amortisation",
+    "inputs": {
+      "principal": 200000.0,
+      "annual_rate": 0.0525,
+      "term_years": 25,
+      "repayment_month": 216,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 1198.5,
+      "total_repayable": 359550.0,
+      "total_interest": 159550.0,
+      "month_interest": 371.53,
+      "month_principal": 826.97,
+      "closing_balance": 84093.43,
+      "penalty": 0.0
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "AMO_019",
+    "description": "Amortisation \u00a3200k 5.25% 25y month 228",
+    "category": "amortisation",
+    "inputs": {
+      "principal": 200000.0,
+      "annual_rate": 0.0525,
+      "term_years": 25,
+      "repayment_month": 228,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 1198.5,
+      "total_repayable": 359550.0,
+      "total_interest": 159550.0,
+      "month_interest": 327.05,
+      "month_principal": 871.45,
+      "closing_balance": 73882.99,
+      "penalty": 0.0
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "AMO_020",
+    "description": "Amortisation \u00a3200k 5.25% 25y month 240",
+    "category": "amortisation",
+    "inputs": {
+      "principal": 200000.0,
+      "annual_rate": 0.0525,
+      "term_years": 25,
+      "repayment_month": 240,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 1198.5,
+      "total_repayable": 359550.0,
+      "total_interest": 159550.0,
+      "month_interest": 280.18,
+      "month_principal": 918.32,
+      "closing_balance": 63123.39,
+      "penalty": 0.0
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "AMO_021",
+    "description": "Amortisation \u00a3200k 5.25% 25y month 252",
+    "category": "amortisation",
+    "inputs": {
+      "principal": 200000.0,
+      "annual_rate": 0.0525,
+      "term_years": 25,
+      "repayment_month": 252,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 1198.5,
+      "total_repayable": 359550.0,
+      "total_interest": 159550.0,
+      "month_interest": 230.79,
+      "month_principal": 967.71,
+      "closing_balance": 51785.12,
+      "penalty": 0.0
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "AMO_022",
+    "description": "Amortisation \u00a3200k 5.25% 25y month 264",
+    "category": "amortisation",
+    "inputs": {
+      "principal": 200000.0,
+      "annual_rate": 0.0525,
+      "term_years": 25,
+      "repayment_month": 264,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 1198.5,
+      "total_repayable": 359550.0,
+      "total_interest": 159550.0,
+      "month_interest": 178.75,
+      "month_principal": 1019.75,
+      "closing_balance": 39837.07,
+      "penalty": 0.0
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "AMO_023",
+    "description": "Amortisation \u00a3200k 5.25% 25y month 276",
+    "category": "amortisation",
+    "inputs": {
+      "principal": 200000.0,
+      "annual_rate": 0.0525,
+      "term_years": 25,
+      "repayment_month": 276,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 1198.5,
+      "total_repayable": 359550.0,
+      "total_interest": 159550.0,
+      "month_interest": 123.9,
+      "month_principal": 1074.6,
+      "closing_balance": 27246.46,
+      "penalty": 0.0
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "AMO_024",
+    "description": "Amortisation \u00a3200k 5.25% 25y month 288",
+    "category": "amortisation",
+    "inputs": {
+      "principal": 200000.0,
+      "annual_rate": 0.0525,
+      "term_years": 25,
+      "repayment_month": 288,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 1198.5,
+      "total_repayable": 359550.0,
+      "total_interest": 159550.0,
+      "month_interest": 66.11,
+      "month_principal": 1132.39,
+      "closing_balance": 13978.65,
+      "penalty": 0.0
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "AMO_025",
+    "description": "Amortisation \u00a3200k 5.25% 25y month 300",
+    "category": "amortisation",
+    "inputs": {
+      "principal": 200000.0,
+      "annual_rate": 0.0525,
+      "term_years": 25,
+      "repayment_month": 300,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 1198.5,
+      "total_repayable": 359550.0,
+      "total_interest": 159550.0,
+      "month_interest": 5.21,
+      "month_principal": 1193.29,
+      "closing_balance": -2.73,
+      "penalty": 0.0
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "AMO_026",
+    "description": "Amortisation \u00a3500k 4.5% 30y month 24",
+    "category": "amortisation",
+    "inputs": {
+      "principal": 500000.0,
+      "annual_rate": 0.045,
+      "term_years": 30,
+      "repayment_month": 24,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 2533.43,
+      "total_repayable": 912034.8,
+      "total_interest": 412034.8,
+      "month_interest": 1815.81,
+      "month_principal": 717.62,
+      "closing_balance": 483497.1,
+      "penalty": 14504.91
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "AMO_027",
+    "description": "Amortisation \u00a3500k 4.5% 30y month 48",
+    "category": "amortisation",
+    "inputs": {
+      "principal": 500000.0,
+      "annual_rate": 0.045,
+      "term_years": 30,
+      "repayment_month": 48,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 2533.43,
+      "total_repayable": 912034.8,
+      "total_interest": 412034.8,
+      "month_interest": 1748.36,
+      "month_principal": 785.07,
+      "closing_balance": 465443.08,
+      "penalty": 0.0
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "AMO_028",
+    "description": "Amortisation \u00a3500k 4.5% 30y month 72",
+    "category": "amortisation",
+    "inputs": {
+      "principal": 500000.0,
+      "annual_rate": 0.045,
+      "term_years": 30,
+      "repayment_month": 72,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 2533.43,
+      "total_repayable": 912034.8,
+      "total_interest": 412034.8,
+      "month_interest": 1674.57,
+      "month_principal": 858.86,
+      "closing_balance": 445692.16,
+      "penalty": 0.0
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "AMO_029",
+    "description": "Amortisation \u00a3500k 4.5% 30y month 96",
+    "category": "amortisation",
+    "inputs": {
+      "principal": 500000.0,
+      "annual_rate": 0.045,
+      "term_years": 30,
+      "repayment_month": 96,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 2533.43,
+      "total_repayable": 912034.8,
+      "total_interest": 412034.8,
+      "month_interest": 1593.84,
+      "month_principal": 939.59,
+      "closing_balance": 424084.85,
+      "penalty": 0.0
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "AMO_030",
+    "description": "Amortisation \u00a3500k 4.5% 30y month 120",
+    "category": "amortisation",
+    "inputs": {
+      "principal": 500000.0,
+      "annual_rate": 0.045,
+      "term_years": 30,
+      "repayment_month": 120,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 2533.43,
+      "total_repayable": 912034.8,
+      "total_interest": 412034.8,
+      "month_interest": 1505.53,
+      "month_principal": 1027.9,
+      "closing_balance": 400446.67,
+      "penalty": 0.0
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "AMO_031",
+    "description": "Amortisation \u00a3500k 4.5% 30y month 144",
+    "category": "amortisation",
+    "inputs": {
+      "principal": 500000.0,
+      "annual_rate": 0.045,
+      "term_years": 30,
+      "repayment_month": 144,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 2533.43,
+      "total_repayable": 912034.8,
+      "total_interest": 412034.8,
+      "month_interest": 1408.92,
+      "month_principal": 1124.51,
+      "closing_balance": 374586.73,
+      "penalty": 0.0
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "AMO_032",
+    "description": "Amortisation \u00a3500k 4.5% 30y month 168",
+    "category": "amortisation",
+    "inputs": {
+      "principal": 500000.0,
+      "annual_rate": 0.045,
+      "term_years": 30,
+      "repayment_month": 168,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 2533.43,
+      "total_repayable": 912034.8,
+      "total_interest": 412034.8,
+      "month_interest": 1303.22,
+      "month_principal": 1230.21,
+      "closing_balance": 346296.22,
+      "penalty": 0.0
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "AMO_033",
+    "description": "Amortisation \u00a3500k 4.5% 30y month 192",
+    "category": "amortisation",
+    "inputs": {
+      "principal": 500000.0,
+      "annual_rate": 0.045,
+      "term_years": 30,
+      "repayment_month": 192,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 2533.43,
+      "total_repayable": 912034.8,
+      "total_interest": 412034.8,
+      "month_interest": 1187.6,
+      "month_principal": 1345.83,
+      "closing_balance": 315346.67,
+      "penalty": 0.0
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "AMO_034",
+    "description": "Amortisation \u00a3500k 4.5% 30y month 216",
+    "category": "amortisation",
+    "inputs": {
+      "principal": 500000.0,
+      "annual_rate": 0.045,
+      "term_years": 30,
+      "repayment_month": 216,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 2533.43,
+      "total_repayable": 912034.8,
+      "total_interest": 412034.8,
+      "month_interest": 1061.1,
+      "month_principal": 1472.33,
+      "closing_balance": 281488.17,
+      "penalty": 0.0
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "AMO_035",
+    "description": "Amortisation \u00a3500k 4.5% 30y month 240",
+    "category": "amortisation",
+    "inputs": {
+      "principal": 500000.0,
+      "annual_rate": 0.045,
+      "term_years": 30,
+      "repayment_month": 240,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 2533.43,
+      "total_repayable": 912034.8,
+      "total_interest": 412034.8,
+      "month_interest": 922.72,
+      "month_principal": 1610.71,
+      "closing_balance": 244447.31,
+      "penalty": 0.0
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "AMO_036",
+    "description": "Amortisation \u00a3500k 4.5% 30y month 264",
+    "category": "amortisation",
+    "inputs": {
+      "principal": 500000.0,
+      "annual_rate": 0.045,
+      "term_years": 30,
+      "repayment_month": 264,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 2533.43,
+      "total_repayable": 912034.8,
+      "total_interest": 412034.8,
+      "month_interest": 771.33,
+      "month_principal": 1762.1,
+      "closing_balance": 203924.99,
+      "penalty": 0.0
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "AMO_037",
+    "description": "Amortisation \u00a3500k 4.5% 30y month 288",
+    "category": "amortisation",
+    "inputs": {
+      "principal": 500000.0,
+      "annual_rate": 0.045,
+      "term_years": 30,
+      "repayment_month": 288,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 2533.43,
+      "total_repayable": 912034.8,
+      "total_interest": 412034.8,
+      "month_interest": 605.71,
+      "month_principal": 1927.72,
+      "closing_balance": 159593.97,
+      "penalty": 0.0
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "AMO_038",
+    "description": "Amortisation \u00a3500k 4.5% 30y month 312",
+    "category": "amortisation",
+    "inputs": {
+      "principal": 500000.0,
+      "annual_rate": 0.045,
+      "term_years": 30,
+      "repayment_month": 312,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 2533.43,
+      "total_repayable": 912034.8,
+      "total_interest": 412034.8,
+      "month_interest": 424.52,
+      "month_principal": 2108.91,
+      "closing_balance": 111096.27,
+      "penalty": 0.0
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "AMO_039",
+    "description": "Amortisation \u00a3500k 4.5% 30y month 336",
+    "category": "amortisation",
+    "inputs": {
+      "principal": 500000.0,
+      "annual_rate": 0.045,
+      "term_years": 30,
+      "repayment_month": 336,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 2533.43,
+      "total_repayable": 912034.8,
+      "total_interest": 412034.8,
+      "month_interest": 226.3,
+      "month_principal": 2307.13,
+      "closing_balance": 58040.26,
+      "penalty": 0.0
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "AMO_040",
+    "description": "Amortisation \u00a3500k 4.5% 30y month 360",
+    "category": "amortisation",
+    "inputs": {
+      "principal": 500000.0,
+      "annual_rate": 0.045,
+      "term_years": 30,
+      "repayment_month": 360,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 2533.43,
+      "total_repayable": 912034.8,
+      "total_interest": 412034.8,
+      "month_interest": 9.46,
+      "month_principal": 2523.97,
+      "closing_balance": -2.5,
+      "penalty": 0.0
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "PEN_001",
+    "description": "Penalty matrix \u00a3100,000 at 3% month 1 F",
+    "category": "penalty_matrix",
+    "inputs": {
+      "principal": 100000.0,
+      "annual_rate": 0.03,
+      "term_years": 25,
+      "repayment_month": 1,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 474.21,
+      "total_repayable": 142263.0,
+      "total_interest": 42263.0,
+      "month_interest": 250.0,
+      "month_principal": 224.21,
+      "closing_balance": 99775.79,
+      "penalty": 2993.27
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "PEN_002",
+    "description": "Penalty matrix \u00a3100,000 at 3% month 1 V",
+    "category": "penalty_matrix",
+    "inputs": {
+      "principal": 100000.0,
+      "annual_rate": 0.03,
+      "term_years": 25,
+      "repayment_month": 1,
+      "rate_type": "V"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 474.21,
+      "total_repayable": 142263.0,
+      "total_interest": 42263.0,
+      "month_interest": 250.0,
+      "month_principal": 224.21,
+      "closing_balance": 99775.79,
+      "penalty": 0.0
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "PEN_003",
+    "description": "Penalty matrix \u00a3100,000 at 3% month 12 F",
+    "category": "penalty_matrix",
+    "inputs": {
+      "principal": 100000.0,
+      "annual_rate": 0.03,
+      "term_years": 25,
+      "repayment_month": 12,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 474.21,
+      "total_repayable": 142263.0,
+      "total_interest": 42263.0,
+      "month_interest": 243.76,
+      "month_principal": 230.45,
+      "closing_balance": 97272.18,
+      "penalty": 2918.17
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "PEN_004",
+    "description": "Penalty matrix \u00a3100,000 at 3% month 12 V",
+    "category": "penalty_matrix",
+    "inputs": {
+      "principal": 100000.0,
+      "annual_rate": 0.03,
+      "term_years": 25,
+      "repayment_month": 12,
+      "rate_type": "V"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 474.21,
+      "total_repayable": 142263.0,
+      "total_interest": 42263.0,
+      "month_interest": 243.76,
+      "month_principal": 230.45,
+      "closing_balance": 97272.18,
+      "penalty": 0.0
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "PEN_005",
+    "description": "Penalty matrix \u00a3100,000 at 3% month 24 F",
+    "category": "penalty_matrix",
+    "inputs": {
+      "principal": 100000.0,
+      "annual_rate": 0.03,
+      "term_years": 25,
+      "repayment_month": 24,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 474.21,
+      "total_repayable": 142263.0,
+      "total_interest": 42263.0,
+      "month_interest": 236.75,
+      "month_principal": 237.46,
+      "closing_balance": 94461.38,
+      "penalty": 2833.84
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "PEN_006",
+    "description": "Penalty matrix \u00a3100,000 at 3% month 24 V",
+    "category": "penalty_matrix",
+    "inputs": {
+      "principal": 100000.0,
+      "annual_rate": 0.03,
+      "term_years": 25,
+      "repayment_month": 24,
+      "rate_type": "V"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 474.21,
+      "total_repayable": 142263.0,
+      "total_interest": 42263.0,
+      "month_interest": 236.75,
+      "month_principal": 237.46,
+      "closing_balance": 94461.38,
+      "penalty": 0.0
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "PEN_007",
+    "description": "Penalty matrix \u00a3100,000 at 3% month 36 F",
+    "category": "penalty_matrix",
+    "inputs": {
+      "principal": 100000.0,
+      "annual_rate": 0.03,
+      "term_years": 25,
+      "repayment_month": 36,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 474.21,
+      "total_repayable": 142263.0,
+      "total_interest": 42263.0,
+      "month_interest": 229.52,
+      "month_principal": 244.69,
+      "closing_balance": 91565.07,
+      "penalty": 2746.95
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "PEN_008",
+    "description": "Penalty matrix \u00a3100,000 at 3% month 36 V",
+    "category": "penalty_matrix",
+    "inputs": {
+      "principal": 100000.0,
+      "annual_rate": 0.03,
+      "term_years": 25,
+      "repayment_month": 36,
+      "rate_type": "V"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 474.21,
+      "total_repayable": 142263.0,
+      "total_interest": 42263.0,
+      "month_interest": 229.52,
+      "month_principal": 244.69,
+      "closing_balance": 91565.07,
+      "penalty": 0.0
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "PEN_009",
+    "description": "Penalty matrix \u00a3100,000 at 3% month 37 F",
+    "category": "penalty_matrix",
+    "inputs": {
+      "principal": 100000.0,
+      "annual_rate": 0.03,
+      "term_years": 25,
+      "repayment_month": 37,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 474.21,
+      "total_repayable": 142263.0,
+      "total_interest": 42263.0,
+      "month_interest": 228.91,
+      "month_principal": 245.3,
+      "closing_balance": 91319.77,
+      "penalty": 0.0
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "PEN_010",
+    "description": "Penalty matrix \u00a3100,000 at 3% month 37 V",
+    "category": "penalty_matrix",
+    "inputs": {
+      "principal": 100000.0,
+      "annual_rate": 0.03,
+      "term_years": 25,
+      "repayment_month": 37,
+      "rate_type": "V"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 474.21,
+      "total_repayable": 142263.0,
+      "total_interest": 42263.0,
+      "month_interest": 228.91,
+      "month_principal": 245.3,
+      "closing_balance": 91319.77,
+      "penalty": 0.0
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "PEN_011",
+    "description": "Penalty matrix \u00a3100,000 at 5% month 1 F",
+    "category": "penalty_matrix",
+    "inputs": {
+      "principal": 100000.0,
+      "annual_rate": 0.05,
+      "term_years": 25,
+      "repayment_month": 1,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 584.59,
+      "total_repayable": 175377.0,
+      "total_interest": 75377.0,
+      "month_interest": 416.67,
+      "month_principal": 167.92,
+      "closing_balance": 99832.08,
+      "penalty": 2994.96
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "PEN_012",
+    "description": "Penalty matrix \u00a3100,000 at 5% month 1 V",
+    "category": "penalty_matrix",
+    "inputs": {
+      "principal": 100000.0,
+      "annual_rate": 0.05,
+      "term_years": 25,
+      "repayment_month": 1,
+      "rate_type": "V"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 584.59,
+      "total_repayable": 175377.0,
+      "total_interest": 75377.0,
+      "month_interest": 416.67,
+      "month_principal": 167.92,
+      "closing_balance": 99832.08,
+      "penalty": 0.0
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "PEN_013",
+    "description": "Penalty matrix \u00a3100,000 at 5% month 12 F",
+    "category": "penalty_matrix",
+    "inputs": {
+      "principal": 100000.0,
+      "annual_rate": 0.05,
+      "term_years": 25,
+      "repayment_month": 12,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 584.59,
+      "total_repayable": 175377.0,
+      "total_interest": 75377.0,
+      "month_interest": 408.81,
+      "month_principal": 175.78,
+      "closing_balance": 97938.1,
+      "penalty": 2938.14
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "PEN_014",
+    "description": "Penalty matrix \u00a3100,000 at 5% month 12 V",
+    "category": "penalty_matrix",
+    "inputs": {
+      "principal": 100000.0,
+      "annual_rate": 0.05,
+      "term_years": 25,
+      "repayment_month": 12,
+      "rate_type": "V"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 584.59,
+      "total_repayable": 175377.0,
+      "total_interest": 75377.0,
+      "month_interest": 408.81,
+      "month_principal": 175.78,
+      "closing_balance": 97938.1,
+      "penalty": 0.0
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "PEN_015",
+    "description": "Penalty matrix \u00a3100,000 at 5% month 24 F",
+    "category": "penalty_matrix",
+    "inputs": {
+      "principal": 100000.0,
+      "annual_rate": 0.05,
+      "term_years": 25,
+      "repayment_month": 24,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 584.59,
+      "total_repayable": 175377.0,
+      "total_interest": 75377.0,
+      "month_interest": 399.81,
+      "month_principal": 184.78,
+      "closing_balance": 95770.71,
+      "penalty": 2873.12
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "PEN_016",
+    "description": "Penalty matrix \u00a3100,000 at 5% month 24 V",
+    "category": "penalty_matrix",
+    "inputs": {
+      "principal": 100000.0,
+      "annual_rate": 0.05,
+      "term_years": 25,
+      "repayment_month": 24,
+      "rate_type": "V"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 584.59,
+      "total_repayable": 175377.0,
+      "total_interest": 75377.0,
+      "month_interest": 399.81,
+      "month_principal": 184.78,
+      "closing_balance": 95770.71,
+      "penalty": 0.0
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "PEN_017",
+    "description": "Penalty matrix \u00a3100,000 at 5% month 36 F",
+    "category": "penalty_matrix",
+    "inputs": {
+      "principal": 100000.0,
+      "annual_rate": 0.05,
+      "term_years": 25,
+      "repayment_month": 36,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 584.59,
+      "total_repayable": 175377.0,
+      "total_interest": 75377.0,
+      "month_interest": 390.36,
+      "month_principal": 194.23,
+      "closing_balance": 93492.43,
+      "penalty": 2804.77
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "PEN_018",
+    "description": "Penalty matrix \u00a3100,000 at 5% month 36 V",
+    "category": "penalty_matrix",
+    "inputs": {
+      "principal": 100000.0,
+      "annual_rate": 0.05,
+      "term_years": 25,
+      "repayment_month": 36,
+      "rate_type": "V"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 584.59,
+      "total_repayable": 175377.0,
+      "total_interest": 75377.0,
+      "month_interest": 390.36,
+      "month_principal": 194.23,
+      "closing_balance": 93492.43,
+      "penalty": 0.0
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "PEN_019",
+    "description": "Penalty matrix \u00a3100,000 at 5% month 37 F",
+    "category": "penalty_matrix",
+    "inputs": {
+      "principal": 100000.0,
+      "annual_rate": 0.05,
+      "term_years": 25,
+      "repayment_month": 37,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 584.59,
+      "total_repayable": 175377.0,
+      "total_interest": 75377.0,
+      "month_interest": 389.55,
+      "month_principal": 195.04,
+      "closing_balance": 93297.39,
+      "penalty": 0.0
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "PEN_020",
+    "description": "Penalty matrix \u00a3100,000 at 5% month 37 V",
+    "category": "penalty_matrix",
+    "inputs": {
+      "principal": 100000.0,
+      "annual_rate": 0.05,
+      "term_years": 25,
+      "repayment_month": 37,
+      "rate_type": "V"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 584.59,
+      "total_repayable": 175377.0,
+      "total_interest": 75377.0,
+      "month_interest": 389.55,
+      "month_principal": 195.04,
+      "closing_balance": 93297.39,
+      "penalty": 0.0
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "PEN_021",
+    "description": "Penalty matrix \u00a3100,000 at 7% month 1 F",
+    "category": "penalty_matrix",
+    "inputs": {
+      "principal": 100000.0,
+      "annual_rate": 0.07,
+      "term_years": 25,
+      "repayment_month": 1,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 706.78,
+      "total_repayable": 212034.0,
+      "total_interest": 112034.0,
+      "month_interest": 583.33,
+      "month_principal": 123.45,
+      "closing_balance": 99876.55,
+      "penalty": 2996.3
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "PEN_022",
+    "description": "Penalty matrix \u00a3100,000 at 7% month 1 V",
+    "category": "penalty_matrix",
+    "inputs": {
+      "principal": 100000.0,
+      "annual_rate": 0.07,
+      "term_years": 25,
+      "repayment_month": 1,
+      "rate_type": "V"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 706.78,
+      "total_repayable": 212034.0,
+      "total_interest": 112034.0,
+      "month_interest": 583.33,
+      "month_principal": 123.45,
+      "closing_balance": 99876.55,
+      "penalty": 0.0
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "PEN_023",
+    "description": "Penalty matrix \u00a3100,000 at 7% month 12 F",
+    "category": "penalty_matrix",
+    "inputs": {
+      "principal": 100000.0,
+      "annual_rate": 0.07,
+      "term_years": 25,
+      "repayment_month": 12,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 706.78,
+      "total_repayable": 212034.0,
+      "total_interest": 112034.0,
+      "month_interest": 575.18,
+      "month_principal": 131.6,
+      "closing_balance": 98470.17,
+      "penalty": 2954.11
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "PEN_024",
+    "description": "Penalty matrix \u00a3100,000 at 7% month 12 V",
+    "category": "penalty_matrix",
+    "inputs": {
+      "principal": 100000.0,
+      "annual_rate": 0.07,
+      "term_years": 25,
+      "repayment_month": 12,
+      "rate_type": "V"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 706.78,
+      "total_repayable": 212034.0,
+      "total_interest": 112034.0,
+      "month_interest": 575.18,
+      "month_principal": 131.6,
+      "closing_balance": 98470.17,
+      "penalty": 0.0
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "PEN_025",
+    "description": "Penalty matrix \u00a3100,000 at 7% month 24 F",
+    "category": "penalty_matrix",
+    "inputs": {
+      "principal": 100000.0,
+      "annual_rate": 0.07,
+      "term_years": 25,
+      "repayment_month": 24,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 706.78,
+      "total_repayable": 212034.0,
+      "total_interest": 112034.0,
+      "month_interest": 565.66,
+      "month_principal": 141.12,
+      "closing_balance": 96829.75,
+      "penalty": 2904.89
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "PEN_026",
+    "description": "Penalty matrix \u00a3100,000 at 7% month 24 V",
+    "category": "penalty_matrix",
+    "inputs": {
+      "principal": 100000.0,
+      "annual_rate": 0.07,
+      "term_years": 25,
+      "repayment_month": 24,
+      "rate_type": "V"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 706.78,
+      "total_repayable": 212034.0,
+      "total_interest": 112034.0,
+      "month_interest": 565.66,
+      "month_principal": 141.12,
+      "closing_balance": 96829.75,
+      "penalty": 0.0
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "PEN_027",
+    "description": "Penalty matrix \u00a3100,000 at 7% month 36 F",
+    "category": "penalty_matrix",
+    "inputs": {
+      "principal": 100000.0,
+      "annual_rate": 0.07,
+      "term_years": 25,
+      "repayment_month": 36,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 706.78,
+      "total_repayable": 212034.0,
+      "total_interest": 112034.0,
+      "month_interest": 555.46,
+      "month_principal": 151.32,
+      "closing_balance": 95070.74,
+      "penalty": 2852.12
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "PEN_028",
+    "description": "Penalty matrix \u00a3100,000 at 7% month 36 V",
+    "category": "penalty_matrix",
+    "inputs": {
+      "principal": 100000.0,
+      "annual_rate": 0.07,
+      "term_years": 25,
+      "repayment_month": 36,
+      "rate_type": "V"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 706.78,
+      "total_repayable": 212034.0,
+      "total_interest": 112034.0,
+      "month_interest": 555.46,
+      "month_principal": 151.32,
+      "closing_balance": 95070.74,
+      "penalty": 0.0
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "PEN_029",
+    "description": "Penalty matrix \u00a3100,000 at 7% month 37 F",
+    "category": "penalty_matrix",
+    "inputs": {
+      "principal": 100000.0,
+      "annual_rate": 0.07,
+      "term_years": 25,
+      "repayment_month": 37,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 706.78,
+      "total_repayable": 212034.0,
+      "total_interest": 112034.0,
+      "month_interest": 554.58,
+      "month_principal": 152.2,
+      "closing_balance": 94918.54,
+      "penalty": 0.0
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "PEN_030",
+    "description": "Penalty matrix \u00a3100,000 at 7% month 37 V",
+    "category": "penalty_matrix",
+    "inputs": {
+      "principal": 100000.0,
+      "annual_rate": 0.07,
+      "term_years": 25,
+      "repayment_month": 37,
+      "rate_type": "V"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 706.78,
+      "total_repayable": 212034.0,
+      "total_interest": 112034.0,
+      "month_interest": 554.58,
+      "month_principal": 152.2,
+      "closing_balance": 94918.54,
+      "penalty": 0.0
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "ROU_001",
+    "description": "Rounding repeating decimal rate 0.333333%",
+    "category": "rounding_precision",
+    "inputs": {
+      "principal": 200000.0,
+      "annual_rate": 0.003333333333333333,
+      "term_years": 25,
+      "repayment_month": 1,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 694.92,
+      "total_repayable": 208476.0,
+      "total_interest": 8476.0,
+      "month_interest": 55.56,
+      "month_principal": 639.36,
+      "closing_balance": 199360.64,
+      "penalty": 5980.82
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "ROU_002",
+    "description": "Rounding repeating decimal rate 0.666667%",
+    "category": "rounding_precision",
+    "inputs": {
+      "principal": 200000.0,
+      "annual_rate": 0.006666666666666666,
+      "term_years": 25,
+      "repayment_month": 1,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 723.95,
+      "total_repayable": 217185.0,
+      "total_interest": 17185.0,
+      "month_interest": 111.11,
+      "month_principal": 612.84,
+      "closing_balance": 199387.16,
+      "penalty": 5981.61
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "ROU_003",
+    "description": "Rounding repeating decimal rate 0.142857%",
+    "category": "rounding_precision",
+    "inputs": {
+      "principal": 200000.0,
+      "annual_rate": 0.0014285714285714286,
+      "term_years": 25,
+      "repayment_month": 1,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 678.68,
+      "total_repayable": 203604.0,
+      "total_interest": 3604.0,
+      "month_interest": 23.81,
+      "month_principal": 654.87,
+      "closing_balance": 199345.13,
+      "penalty": 5980.35
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "ROU_004",
+    "description": "Rounding repeating decimal rate 0.166667%",
+    "category": "rounding_precision",
+    "inputs": {
+      "principal": 200000.0,
+      "annual_rate": 0.0016666666666666666,
+      "term_years": 25,
+      "repayment_month": 1,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 680.7,
+      "total_repayable": 204210.0,
+      "total_interest": 4210.0,
+      "month_interest": 27.78,
+      "month_principal": 652.92,
+      "closing_balance": 199347.08,
+      "penalty": 5980.41
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "ROU_005",
+    "description": "Rounding repeating decimal rate 0.111111%",
+    "category": "rounding_precision",
+    "inputs": {
+      "principal": 200000.0,
+      "annual_rate": 0.0011111111111111111,
+      "term_years": 25,
+      "repayment_month": 1,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 676.0,
+      "total_repayable": 202800.0,
+      "total_interest": 2800.0,
+      "month_interest": 18.52,
+      "month_principal": 657.48,
+      "closing_balance": 199342.52,
+      "penalty": 5980.28
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "ROU_006",
+    "description": "Rounding uneven principal \u00a3100,000.01",
+    "category": "rounding_precision",
+    "inputs": {
+      "principal": 100000.01,
+      "annual_rate": 0.05,
+      "term_years": 20,
+      "repayment_month": 1,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 659.96,
+      "total_repayable": 158390.4,
+      "total_interest": 58390.39,
+      "month_interest": 416.67,
+      "month_principal": 243.29,
+      "closing_balance": 99756.72,
+      "penalty": 2992.7
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "ROU_007",
+    "description": "Rounding uneven principal \u00a399,999.99",
+    "category": "rounding_precision",
+    "inputs": {
+      "principal": 99999.99,
+      "annual_rate": 0.05,
+      "term_years": 20,
+      "repayment_month": 1,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 659.96,
+      "total_repayable": 158390.4,
+      "total_interest": 58390.41,
+      "month_interest": 416.67,
+      "month_principal": 243.29,
+      "closing_balance": 99756.7,
+      "penalty": 2992.7
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "ROU_008",
+    "description": "Rounding uneven principal \u00a3123,456.78",
+    "category": "rounding_precision",
+    "inputs": {
+      "principal": 123456.78,
+      "annual_rate": 0.05,
+      "term_years": 20,
+      "repayment_month": 1,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 814.76,
+      "total_repayable": 195542.4,
+      "total_interest": 72085.62,
+      "month_interest": 514.4,
+      "month_principal": 300.36,
+      "closing_balance": 123156.42,
+      "penalty": 3694.69
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "ROU_009",
+    "description": "Rounding uneven principal \u00a3111,111.11",
+    "category": "rounding_precision",
+    "inputs": {
+      "principal": 111111.11,
+      "annual_rate": 0.05,
+      "term_years": 20,
+      "repayment_month": 1,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 733.28,
+      "total_repayable": 175987.2,
+      "total_interest": 64876.09,
+      "month_interest": 462.96,
+      "month_principal": 270.32,
+      "closing_balance": 110840.79,
+      "penalty": 3325.22
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "ROU_010",
+    "description": "Rounding uneven principal \u00a3999,999.99",
+    "category": "rounding_precision",
+    "inputs": {
+      "principal": 999999.99,
+      "annual_rate": 0.05,
+      "term_years": 20,
+      "repayment_month": 1,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 6599.56,
+      "total_repayable": 1583894.4,
+      "total_interest": 583894.41,
+      "month_interest": 4166.67,
+      "month_principal": 2432.89,
+      "closing_balance": 997567.1,
+      "penalty": 29927.01
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "ROU_011",
+    "description": "Rounding COBOL vs float: \u00a3200k at 5.251%",
+    "category": "rounding_precision",
+    "inputs": {
+      "principal": 200000.0,
+      "annual_rate": 0.05251,
+      "term_years": 25,
+      "repayment_month": 1,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 1198.61,
+      "total_repayable": 359583.0,
+      "total_interest": 159583.0,
+      "month_interest": 875.17,
+      "month_principal": 323.44,
+      "closing_balance": 199676.56,
+      "penalty": 5990.3
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "ROU_012",
+    "description": "Rounding COBOL vs float: \u00a3350k at 3.333%",
+    "category": "rounding_precision",
+    "inputs": {
+      "principal": 350000.0,
+      "annual_rate": 0.03333,
+      "term_years": 30,
+      "repayment_month": 180,
+      "rate_type": "V"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 1539.21,
+      "total_repayable": 554115.6,
+      "total_interest": 204115.6,
+      "month_interest": 607.53,
+      "month_principal": 931.68,
+      "closing_balance": 217799.94,
+      "penalty": 0.0
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "ROU_013",
+    "description": "Rounding 0.01% rate minimal",
+    "category": "rounding_precision",
+    "inputs": {
+      "principal": 500000.0,
+      "annual_rate": 0.0001,
+      "term_years": 40,
+      "repayment_month": 1,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 1043.76,
+      "total_repayable": 501004.8,
+      "total_interest": 1004.8,
+      "month_interest": 4.17,
+      "month_principal": 1039.59,
+      "closing_balance": 498960.41,
+      "penalty": 14968.81
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "ROU_014",
+    "description": "Rounding 99.9999% rate max valid",
+    "category": "rounding_precision",
+    "inputs": {
+      "principal": 10000.0,
+      "annual_rate": 0.999999,
+      "term_years": 1,
+      "repayment_month": 1,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 1349.96,
+      "total_repayable": 16199.52,
+      "total_interest": 6199.52,
+      "month_interest": 833.33,
+      "month_principal": 516.63,
+      "closing_balance": 9483.37,
+      "penalty": 284.5
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "ROU_015",
+    "description": "Rounding padding 15",
+    "category": "rounding_precision",
+    "inputs": {
+      "principal": 165000.0,
+      "annual_rate": 0.055,
+      "term_years": 20,
+      "repayment_month": 1,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 1135.01,
+      "total_repayable": 272402.4,
+      "total_interest": 107402.4,
+      "month_interest": 756.25,
+      "month_principal": 378.76,
+      "closing_balance": 164621.24,
+      "penalty": 4938.64
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "ROU_016",
+    "description": "Rounding padding 16",
+    "category": "rounding_precision",
+    "inputs": {
+      "principal": 166000.0,
+      "annual_rate": 0.056,
+      "term_years": 20,
+      "repayment_month": 1,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 1151.29,
+      "total_repayable": 276309.6,
+      "total_interest": 110309.6,
+      "month_interest": 774.67,
+      "month_principal": 376.62,
+      "closing_balance": 165623.38,
+      "penalty": 4968.7
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "ROU_017",
+    "description": "Rounding padding 17",
+    "category": "rounding_precision",
+    "inputs": {
+      "principal": 167000.0,
+      "annual_rate": 0.057,
+      "term_years": 20,
+      "repayment_month": 1,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 1167.72,
+      "total_repayable": 280252.8,
+      "total_interest": 113252.8,
+      "month_interest": 793.25,
+      "month_principal": 374.47,
+      "closing_balance": 166625.53,
+      "penalty": 4998.77
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "ROU_018",
+    "description": "Rounding padding 18",
+    "category": "rounding_precision",
+    "inputs": {
+      "principal": 168000.0,
+      "annual_rate": 0.058,
+      "term_years": 20,
+      "repayment_month": 1,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 1184.3,
+      "total_repayable": 284232.0,
+      "total_interest": 116232.0,
+      "month_interest": 812.0,
+      "month_principal": 372.3,
+      "closing_balance": 167627.7,
+      "penalty": 5028.83
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "ROU_019",
+    "description": "Rounding padding 19",
+    "category": "rounding_precision",
+    "inputs": {
+      "principal": 169000.0,
+      "annual_rate": 0.059,
+      "term_years": 20,
+      "repayment_month": 1,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 1201.04,
+      "total_repayable": 288249.6,
+      "total_interest": 119249.6,
+      "month_interest": 830.92,
+      "month_principal": 370.12,
+      "closing_balance": 168629.88,
+      "penalty": 5058.9
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "ROU_020",
+    "description": "Rounding padding 20",
+    "category": "rounding_precision",
+    "inputs": {
+      "principal": 170000.0,
+      "annual_rate": 0.06,
+      "term_years": 20,
+      "repayment_month": 1,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 1217.93,
+      "total_repayable": 292303.2,
+      "total_interest": 122303.2,
+      "month_interest": 850.0,
+      "month_principal": 367.93,
+      "closing_balance": 169632.07,
+      "penalty": 5088.96
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "BOU_001",
+    "description": "Boundary first \u00a3100,000 5.0% 10y",
+    "category": "boundary_month",
+    "inputs": {
+      "principal": 100000.0,
+      "annual_rate": 0.05,
+      "term_years": 10,
+      "repayment_month": 1,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 1060.66,
+      "total_repayable": 127279.2,
+      "total_interest": 27279.2,
+      "month_interest": 416.67,
+      "month_principal": 643.99,
+      "closing_balance": 99356.01,
+      "penalty": 2980.68
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "BOU_002",
+    "description": "Boundary second \u00a3100,000 5.0% 10y",
+    "category": "boundary_month",
+    "inputs": {
+      "principal": 100000.0,
+      "annual_rate": 0.05,
+      "term_years": 10,
+      "repayment_month": 2,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 1060.66,
+      "total_repayable": 127279.2,
+      "total_interest": 27279.2,
+      "month_interest": 413.98,
+      "month_principal": 646.68,
+      "closing_balance": 98709.33,
+      "penalty": 2961.28
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "BOU_003",
+    "description": "Boundary penultimate \u00a3100,000 5.0% 10y",
+    "category": "boundary_month",
+    "inputs": {
+      "principal": 100000.0,
+      "annual_rate": 0.05,
+      "term_years": 10,
+      "repayment_month": 119,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 1060.66,
+      "total_repayable": 127279.2,
+      "total_interest": 27279.2,
+      "month_interest": 8.78,
+      "month_principal": 1051.88,
+      "closing_balance": 1055.53,
+      "penalty": 0.0
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "BOU_004",
+    "description": "Boundary final \u00a3100,000 5.0% 10y",
+    "category": "boundary_month",
+    "inputs": {
+      "principal": 100000.0,
+      "annual_rate": 0.05,
+      "term_years": 10,
+      "repayment_month": 120,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 1060.66,
+      "total_repayable": 127279.2,
+      "total_interest": 27279.2,
+      "month_interest": 4.4,
+      "month_principal": 1056.26,
+      "closing_balance": -0.73,
+      "penalty": 0.0
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "BOU_005",
+    "description": "Boundary month 30 \u00a3100,000 5.0% 10y",
+    "category": "boundary_month",
+    "inputs": {
+      "principal": 100000.0,
+      "annual_rate": 0.05,
+      "term_years": 10,
+      "repayment_month": 30,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 1060.66,
+      "total_repayable": 127279.2,
+      "total_interest": 27279.2,
+      "month_interest": 334.14,
+      "month_principal": 726.52,
+      "closing_balance": 79466.29,
+      "penalty": 2383.99
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "BOU_006",
+    "description": "Boundary first \u00a3200,000 4.0% 15y",
+    "category": "boundary_month",
+    "inputs": {
+      "principal": 200000.0,
+      "annual_rate": 0.04,
+      "term_years": 15,
+      "repayment_month": 1,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 1479.38,
+      "total_repayable": 266288.4,
+      "total_interest": 66288.4,
+      "month_interest": 666.67,
+      "month_principal": 812.71,
+      "closing_balance": 199187.29,
+      "penalty": 5975.62
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "BOU_007",
+    "description": "Boundary second \u00a3200,000 4.0% 15y",
+    "category": "boundary_month",
+    "inputs": {
+      "principal": 200000.0,
+      "annual_rate": 0.04,
+      "term_years": 15,
+      "repayment_month": 2,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 1479.38,
+      "total_repayable": 266288.4,
+      "total_interest": 66288.4,
+      "month_interest": 663.96,
+      "month_principal": 815.42,
+      "closing_balance": 198371.87,
+      "penalty": 5951.16
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "BOU_008",
+    "description": "Boundary penultimate \u00a3200,000 4.0% 15y",
+    "category": "boundary_month",
+    "inputs": {
+      "principal": 200000.0,
+      "annual_rate": 0.04,
+      "term_years": 15,
+      "repayment_month": 179,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 1479.38,
+      "total_repayable": 266288.4,
+      "total_interest": 66288.4,
+      "month_interest": 9.81,
+      "month_principal": 1469.57,
+      "closing_balance": 1473.52,
+      "penalty": 0.0
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "BOU_009",
+    "description": "Boundary final \u00a3200,000 4.0% 15y",
+    "category": "boundary_month",
+    "inputs": {
+      "principal": 200000.0,
+      "annual_rate": 0.04,
+      "term_years": 15,
+      "repayment_month": 180,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 1479.38,
+      "total_repayable": 266288.4,
+      "total_interest": 66288.4,
+      "month_interest": 4.91,
+      "month_principal": 1474.47,
+      "closing_balance": -0.95,
+      "penalty": 0.0
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "BOU_010",
+    "description": "Boundary month 45 \u00a3200,000 4.0% 15y",
+    "category": "boundary_month",
+    "inputs": {
+      "principal": 200000.0,
+      "annual_rate": 0.04,
+      "term_years": 15,
+      "repayment_month": 45,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 1479.38,
+      "total_repayable": 266288.4,
+      "total_interest": 66288.4,
+      "month_interest": 538.51,
+      "month_principal": 940.87,
+      "closing_balance": 160613.22,
+      "penalty": 0.0
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "BOU_011",
+    "description": "Boundary first \u00a3300,000 3.5% 20y",
+    "category": "boundary_month",
+    "inputs": {
+      "principal": 300000.0,
+      "annual_rate": 0.035,
+      "term_years": 20,
+      "repayment_month": 1,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 1739.88,
+      "total_repayable": 417571.2,
+      "total_interest": 117571.2,
+      "month_interest": 875.0,
+      "month_principal": 864.88,
+      "closing_balance": 299135.12,
+      "penalty": 8974.05
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "BOU_012",
+    "description": "Boundary second \u00a3300,000 3.5% 20y",
+    "category": "boundary_month",
+    "inputs": {
+      "principal": 300000.0,
+      "annual_rate": 0.035,
+      "term_years": 20,
+      "repayment_month": 2,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 1739.88,
+      "total_repayable": 417571.2,
+      "total_interest": 117571.2,
+      "month_interest": 872.48,
+      "month_principal": 867.4,
+      "closing_balance": 298267.72,
+      "penalty": 8948.03
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "BOU_013",
+    "description": "Boundary penultimate \u00a3300,000 3.5% 20y",
+    "category": "boundary_month",
+    "inputs": {
+      "principal": 300000.0,
+      "annual_rate": 0.035,
+      "term_years": 20,
+      "repayment_month": 239,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 1739.88,
+      "total_repayable": 417571.2,
+      "total_interest": 117571.2,
+      "month_interest": 10.1,
+      "month_principal": 1729.78,
+      "closing_balance": 1734.41,
+      "penalty": 0.0
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "BOU_014",
+    "description": "Boundary final \u00a3300,000 3.5% 20y",
+    "category": "boundary_month",
+    "inputs": {
+      "principal": 300000.0,
+      "annual_rate": 0.035,
+      "term_years": 20,
+      "repayment_month": 240,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 1739.88,
+      "total_repayable": 417571.2,
+      "total_interest": 117571.2,
+      "month_interest": 5.06,
+      "month_principal": 1734.82,
+      "closing_balance": -0.41,
+      "penalty": 0.0
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "BOU_015",
+    "description": "Boundary month 120 \u00a3300,000 3.5% 20y",
+    "category": "boundary_month",
+    "inputs": {
+      "principal": 300000.0,
+      "annual_rate": 0.035,
+      "term_years": 20,
+      "repayment_month": 120,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 1739.88,
+      "total_repayable": 417571.2,
+      "total_interest": 117571.2,
+      "month_interest": 516.75,
+      "month_principal": 1223.13,
+      "closing_balance": 175948.05,
+      "penalty": 0.0
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "BOU_016",
+    "description": "Boundary first \u00a3400,000 6.0% 25y",
+    "category": "boundary_month",
+    "inputs": {
+      "principal": 400000.0,
+      "annual_rate": 0.06,
+      "term_years": 25,
+      "repayment_month": 1,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 2577.21,
+      "total_repayable": 773163.0,
+      "total_interest": 373163.0,
+      "month_interest": 2000.0,
+      "month_principal": 577.21,
+      "closing_balance": 399422.79,
+      "penalty": 11982.68
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "BOU_017",
+    "description": "Boundary second \u00a3400,000 6.0% 25y",
+    "category": "boundary_month",
+    "inputs": {
+      "principal": 400000.0,
+      "annual_rate": 0.06,
+      "term_years": 25,
+      "repayment_month": 2,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 2577.21,
+      "total_repayable": 773163.0,
+      "total_interest": 373163.0,
+      "month_interest": 1997.11,
+      "month_principal": 580.1,
+      "closing_balance": 398842.69,
+      "penalty": 11965.28
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "BOU_018",
+    "description": "Boundary penultimate \u00a3400,000 6.0% 25y",
+    "category": "boundary_month",
+    "inputs": {
+      "principal": 400000.0,
+      "annual_rate": 0.06,
+      "term_years": 25,
+      "repayment_month": 299,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 2577.21,
+      "total_repayable": 773163.0,
+      "total_interest": 373163.0,
+      "month_interest": 25.56,
+      "month_principal": 2551.65,
+      "closing_balance": 2561.22,
+      "penalty": 0.0
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "BOU_019",
+    "description": "Boundary final \u00a3400,000 6.0% 25y",
+    "category": "boundary_month",
+    "inputs": {
+      "principal": 400000.0,
+      "annual_rate": 0.06,
+      "term_years": 25,
+      "repayment_month": 300,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 2577.21,
+      "total_repayable": 773163.0,
+      "total_interest": 373163.0,
+      "month_interest": 12.81,
+      "month_principal": 2564.4,
+      "closing_balance": -3.18,
+      "penalty": 0.0
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "BOU_020",
+    "description": "Boundary month 150 \u00a3400,000 6.0% 25y",
+    "category": "boundary_month",
+    "inputs": {
+      "principal": 400000.0,
+      "annual_rate": 0.06,
+      "term_years": 25,
+      "repayment_month": 150,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 2577.21,
+      "total_repayable": 773163.0,
+      "total_interest": 373163.0,
+      "month_interest": 1363.61,
+      "month_principal": 1213.6,
+      "closing_balance": 271507.55,
+      "penalty": 0.0
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "BOU_021",
+    "description": "Boundary first \u00a3500,000 5.5% 30y",
+    "category": "boundary_month",
+    "inputs": {
+      "principal": 500000.0,
+      "annual_rate": 0.055,
+      "term_years": 30,
+      "repayment_month": 1,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 2838.94,
+      "total_repayable": 1022018.4,
+      "total_interest": 522018.4,
+      "month_interest": 2291.67,
+      "month_principal": 547.27,
+      "closing_balance": 499452.73,
+      "penalty": 14983.58
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "BOU_022",
+    "description": "Boundary second \u00a3500,000 5.5% 30y",
+    "category": "boundary_month",
+    "inputs": {
+      "principal": 500000.0,
+      "annual_rate": 0.055,
+      "term_years": 30,
+      "repayment_month": 2,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 2838.94,
+      "total_repayable": 1022018.4,
+      "total_interest": 522018.4,
+      "month_interest": 2289.16,
+      "month_principal": 549.78,
+      "closing_balance": 498902.95,
+      "penalty": 14967.09
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "BOU_023",
+    "description": "Boundary penultimate \u00a3500,000 5.5% 30y",
+    "category": "boundary_month",
+    "inputs": {
+      "principal": 500000.0,
+      "annual_rate": 0.055,
+      "term_years": 30,
+      "repayment_month": 359,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 2838.94,
+      "total_repayable": 1022018.4,
+      "total_interest": 522018.4,
+      "month_interest": 25.87,
+      "month_principal": 2813.07,
+      "closing_balance": 2830.48,
+      "penalty": 0.0
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "BOU_024",
+    "description": "Boundary final \u00a3500,000 5.5% 30y",
+    "category": "boundary_month",
+    "inputs": {
+      "principal": 500000.0,
+      "annual_rate": 0.055,
+      "term_years": 30,
+      "repayment_month": 360,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 2838.94,
+      "total_repayable": 1022018.4,
+      "total_interest": 522018.4,
+      "month_interest": 12.97,
+      "month_principal": 2825.97,
+      "closing_balance": 4.51,
+      "penalty": 0.0
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "BOU_025",
+    "description": "Boundary month 180 \u00a3500,000 5.5% 30y",
+    "category": "boundary_month",
+    "inputs": {
+      "principal": 500000.0,
+      "annual_rate": 0.055,
+      "term_years": 30,
+      "repayment_month": 180,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 2838.94,
+      "total_repayable": 1022018.4,
+      "total_interest": 522018.4,
+      "month_interest": 1598.17,
+      "month_principal": 1240.77,
+      "closing_balance": 347449.92,
+      "penalty": 0.0
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "BOU_026",
+    "description": "Boundary first \u00a3150,000 7.0% 35y",
+    "category": "boundary_month",
+    "inputs": {
+      "principal": 150000.0,
+      "annual_rate": 0.07,
+      "term_years": 35,
+      "repayment_month": 1,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 958.28,
+      "total_repayable": 402477.6,
+      "total_interest": 252477.6,
+      "month_interest": 875.0,
+      "month_principal": 83.28,
+      "closing_balance": 149916.72,
+      "penalty": 4497.5
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "BOU_027",
+    "description": "Boundary second \u00a3150,000 7.0% 35y",
+    "category": "boundary_month",
+    "inputs": {
+      "principal": 150000.0,
+      "annual_rate": 0.07,
+      "term_years": 35,
+      "repayment_month": 2,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 958.28,
+      "total_repayable": 402477.6,
+      "total_interest": 252477.6,
+      "month_interest": 874.51,
+      "month_principal": 83.77,
+      "closing_balance": 149832.95,
+      "penalty": 4494.99
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "BOU_028",
+    "description": "Boundary penultimate \u00a3150,000 7.0% 35y",
+    "category": "boundary_month",
+    "inputs": {
+      "principal": 150000.0,
+      "annual_rate": 0.07,
+      "term_years": 35,
+      "repayment_month": 419,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 958.28,
+      "total_repayable": 402477.6,
+      "total_interest": 252477.6,
+      "month_interest": 11.13,
+      "month_principal": 947.15,
+      "closing_balance": 960.46,
+      "penalty": 0.0
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "BOU_029",
+    "description": "Boundary final \u00a3150,000 7.0% 35y",
+    "category": "boundary_month",
+    "inputs": {
+      "principal": 150000.0,
+      "annual_rate": 0.07,
+      "term_years": 35,
+      "repayment_month": 420,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 958.28,
+      "total_repayable": 402477.6,
+      "total_interest": 252477.6,
+      "month_interest": 5.6,
+      "month_principal": 952.68,
+      "closing_balance": 7.78,
+      "penalty": 0.0
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "BOU_030",
+    "description": "Boundary month 210 \u00a3150,000 7.0% 35y",
+    "category": "boundary_month",
+    "inputs": {
+      "principal": 150000.0,
+      "annual_rate": 0.07,
+      "term_years": 35,
+      "repayment_month": 210,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 958.28,
+      "total_repayable": 402477.6,
+      "total_interest": 252477.6,
+      "month_interest": 677.43,
+      "month_principal": 280.85,
+      "closing_balance": 115849.29,
+      "penalty": 0.0
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "RAT_001",
+    "description": "Rate sensitivity 0.5% on \u00a3200k over 25y month 1",
+    "category": "rate_sensitivity",
+    "inputs": {
+      "principal": 200000.0,
+      "annual_rate": 0.005,
+      "term_years": 25,
+      "repayment_month": 1,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 709.34,
+      "total_repayable": 212802.0,
+      "total_interest": 12802.0,
+      "month_interest": 83.33,
+      "month_principal": 626.01,
+      "closing_balance": 199373.99,
+      "penalty": 5981.22
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "RAT_002",
+    "description": "Rate sensitivity 1.0% on \u00a3200k over 25y month 1",
+    "category": "rate_sensitivity",
+    "inputs": {
+      "principal": 200000.0,
+      "annual_rate": 0.01,
+      "term_years": 25,
+      "repayment_month": 1,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 753.74,
+      "total_repayable": 226122.0,
+      "total_interest": 26122.0,
+      "month_interest": 166.67,
+      "month_principal": 587.07,
+      "closing_balance": 199412.93,
+      "penalty": 5982.39
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "RAT_003",
+    "description": "Rate sensitivity 1.5% on \u00a3200k over 25y month 1",
+    "category": "rate_sensitivity",
+    "inputs": {
+      "principal": 200000.0,
+      "annual_rate": 0.015,
+      "term_years": 25,
+      "repayment_month": 1,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 799.87,
+      "total_repayable": 239961.0,
+      "total_interest": 39961.0,
+      "month_interest": 250.0,
+      "month_principal": 549.87,
+      "closing_balance": 199450.13,
+      "penalty": 5983.5
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "RAT_004",
+    "description": "Rate sensitivity 2.0% on \u00a3200k over 25y month 1",
+    "category": "rate_sensitivity",
+    "inputs": {
+      "principal": 200000.0,
+      "annual_rate": 0.02,
+      "term_years": 25,
+      "repayment_month": 1,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 847.71,
+      "total_repayable": 254313.0,
+      "total_interest": 54313.0,
+      "month_interest": 333.33,
+      "month_principal": 514.38,
+      "closing_balance": 199485.62,
+      "penalty": 5984.57
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "RAT_005",
+    "description": "Rate sensitivity 2.5% on \u00a3200k over 25y month 1",
+    "category": "rate_sensitivity",
+    "inputs": {
+      "principal": 200000.0,
+      "annual_rate": 0.025,
+      "term_years": 25,
+      "repayment_month": 1,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 897.23,
+      "total_repayable": 269169.0,
+      "total_interest": 69169.0,
+      "month_interest": 416.67,
+      "month_principal": 480.56,
+      "closing_balance": 199519.44,
+      "penalty": 5985.58
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "RAT_006",
+    "description": "Rate sensitivity 3.0% on \u00a3200k over 25y month 1",
+    "category": "rate_sensitivity",
+    "inputs": {
+      "principal": 200000.0,
+      "annual_rate": 0.03,
+      "term_years": 25,
+      "repayment_month": 1,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 948.42,
+      "total_repayable": 284526.0,
+      "total_interest": 84526.0,
+      "month_interest": 500.0,
+      "month_principal": 448.42,
+      "closing_balance": 199551.58,
+      "penalty": 5986.55
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "RAT_007",
+    "description": "Rate sensitivity 3.5% on \u00a3200k over 25y month 1",
+    "category": "rate_sensitivity",
+    "inputs": {
+      "principal": 200000.0,
+      "annual_rate": 0.035,
+      "term_years": 25,
+      "repayment_month": 1,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 1001.25,
+      "total_repayable": 300375.0,
+      "total_interest": 100375.0,
+      "month_interest": 583.33,
+      "month_principal": 417.92,
+      "closing_balance": 199582.08,
+      "penalty": 5987.46
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "RAT_008",
+    "description": "Rate sensitivity 4.0% on \u00a3200k over 25y month 1",
+    "category": "rate_sensitivity",
+    "inputs": {
+      "principal": 200000.0,
+      "annual_rate": 0.04,
+      "term_years": 25,
+      "repayment_month": 1,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 1055.67,
+      "total_repayable": 316701.0,
+      "total_interest": 116701.0,
+      "month_interest": 666.67,
+      "month_principal": 389.0,
+      "closing_balance": 199611.0,
+      "penalty": 5988.33
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "RAT_009",
+    "description": "Rate sensitivity 4.5% on \u00a3200k over 25y month 1",
+    "category": "rate_sensitivity",
+    "inputs": {
+      "principal": 200000.0,
+      "annual_rate": 0.045,
+      "term_years": 25,
+      "repayment_month": 1,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 1111.66,
+      "total_repayable": 333498.0,
+      "total_interest": 133498.0,
+      "month_interest": 750.0,
+      "month_principal": 361.66,
+      "closing_balance": 199638.34,
+      "penalty": 5989.15
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "RAT_010",
+    "description": "Rate sensitivity 5.0% on \u00a3200k over 25y month 1",
+    "category": "rate_sensitivity",
+    "inputs": {
+      "principal": 200000.0,
+      "annual_rate": 0.05,
+      "term_years": 25,
+      "repayment_month": 1,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 1169.18,
+      "total_repayable": 350754.0,
+      "total_interest": 150754.0,
+      "month_interest": 833.33,
+      "month_principal": 335.85,
+      "closing_balance": 199664.15,
+      "penalty": 5989.92
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "RAT_011",
+    "description": "Rate sensitivity 5.5% on \u00a3200k over 25y month 1",
+    "category": "rate_sensitivity",
+    "inputs": {
+      "principal": 200000.0,
+      "annual_rate": 0.055,
+      "term_years": 25,
+      "repayment_month": 1,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 1228.17,
+      "total_repayable": 368451.0,
+      "total_interest": 168451.0,
+      "month_interest": 916.67,
+      "month_principal": 311.5,
+      "closing_balance": 199688.5,
+      "penalty": 5990.66
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "RAT_012",
+    "description": "Rate sensitivity 6.0% on \u00a3200k over 25y month 1",
+    "category": "rate_sensitivity",
+    "inputs": {
+      "principal": 200000.0,
+      "annual_rate": 0.06,
+      "term_years": 25,
+      "repayment_month": 1,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 1288.6,
+      "total_repayable": 386580.0,
+      "total_interest": 186580.0,
+      "month_interest": 1000.0,
+      "month_principal": 288.6,
+      "closing_balance": 199711.4,
+      "penalty": 5991.34
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "RAT_013",
+    "description": "Rate sensitivity 6.5% on \u00a3200k over 25y month 1",
+    "category": "rate_sensitivity",
+    "inputs": {
+      "principal": 200000.0,
+      "annual_rate": 0.065,
+      "term_years": 25,
+      "repayment_month": 1,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 1350.41,
+      "total_repayable": 405123.0,
+      "total_interest": 205123.0,
+      "month_interest": 1083.33,
+      "month_principal": 267.08,
+      "closing_balance": 199732.92,
+      "penalty": 5991.99
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "RAT_014",
+    "description": "Rate sensitivity 7.0% on \u00a3200k over 25y month 1",
+    "category": "rate_sensitivity",
+    "inputs": {
+      "principal": 200000.0,
+      "annual_rate": 0.07,
+      "term_years": 25,
+      "repayment_month": 1,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 1413.56,
+      "total_repayable": 424068.0,
+      "total_interest": 224068.0,
+      "month_interest": 1166.67,
+      "month_principal": 246.89,
+      "closing_balance": 199753.11,
+      "penalty": 5992.59
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "RAT_015",
+    "description": "Rate sensitivity 7.5% on \u00a3200k over 25y month 1",
+    "category": "rate_sensitivity",
+    "inputs": {
+      "principal": 200000.0,
+      "annual_rate": 0.075,
+      "term_years": 25,
+      "repayment_month": 1,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 1477.98,
+      "total_repayable": 443394.0,
+      "total_interest": 243394.0,
+      "month_interest": 1250.0,
+      "month_principal": 227.98,
+      "closing_balance": 199772.02,
+      "penalty": 5993.16
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "RAT_016",
+    "description": "Rate sensitivity 8.0% on \u00a3200k over 25y month 1",
+    "category": "rate_sensitivity",
+    "inputs": {
+      "principal": 200000.0,
+      "annual_rate": 0.08,
+      "term_years": 25,
+      "repayment_month": 1,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 1543.63,
+      "total_repayable": 463089.0,
+      "total_interest": 263089.0,
+      "month_interest": 1333.33,
+      "month_principal": 210.3,
+      "closing_balance": 199789.7,
+      "penalty": 5993.69
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "RAT_017",
+    "description": "Rate sensitivity 8.5% on \u00a3200k over 25y month 1",
+    "category": "rate_sensitivity",
+    "inputs": {
+      "principal": 200000.0,
+      "annual_rate": 0.085,
+      "term_years": 25,
+      "repayment_month": 1,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 1610.45,
+      "total_repayable": 483135.0,
+      "total_interest": 283135.0,
+      "month_interest": 1416.67,
+      "month_principal": 193.78,
+      "closing_balance": 199806.22,
+      "penalty": 5994.19
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "RAT_018",
+    "description": "Rate sensitivity 9.0% on \u00a3200k over 25y month 1",
+    "category": "rate_sensitivity",
+    "inputs": {
+      "principal": 200000.0,
+      "annual_rate": 0.09,
+      "term_years": 25,
+      "repayment_month": 1,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 1678.39,
+      "total_repayable": 503517.0,
+      "total_interest": 303517.0,
+      "month_interest": 1500.0,
+      "month_principal": 178.39,
+      "closing_balance": 199821.61,
+      "penalty": 5994.65
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "RAT_019",
+    "description": "Rate sensitivity 9.5% on \u00a3200k over 25y month 1",
+    "category": "rate_sensitivity",
+    "inputs": {
+      "principal": 200000.0,
+      "annual_rate": 0.095,
+      "term_years": 25,
+      "repayment_month": 1,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 1747.39,
+      "total_repayable": 524217.0,
+      "total_interest": 324217.0,
+      "month_interest": 1583.33,
+      "month_principal": 164.06,
+      "closing_balance": 199835.94,
+      "penalty": 5995.08
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "RAT_020",
+    "description": "Rate sensitivity 10.0% on \u00a3200k over 25y month 1",
+    "category": "rate_sensitivity",
+    "inputs": {
+      "principal": 200000.0,
+      "annual_rate": 0.1,
+      "term_years": 25,
+      "repayment_month": 1,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 1817.4,
+      "total_repayable": 545220.0,
+      "total_interest": 345220.0,
+      "month_interest": 1666.67,
+      "month_principal": 150.73,
+      "closing_balance": 199849.27,
+      "penalty": 5995.48
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "RAT_021",
+    "description": "Rate sensitivity 11.0% on \u00a3200k over 25y month 1",
+    "category": "rate_sensitivity",
+    "inputs": {
+      "principal": 200000.0,
+      "annual_rate": 0.11,
+      "term_years": 25,
+      "repayment_month": 1,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 1960.23,
+      "total_repayable": 588069.0,
+      "total_interest": 388069.0,
+      "month_interest": 1833.33,
+      "month_principal": 126.9,
+      "closing_balance": 199873.1,
+      "penalty": 5996.19
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "RAT_022",
+    "description": "Rate sensitivity 12.0% on \u00a3200k over 25y month 1",
+    "category": "rate_sensitivity",
+    "inputs": {
+      "principal": 200000.0,
+      "annual_rate": 0.12,
+      "term_years": 25,
+      "repayment_month": 1,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 2106.45,
+      "total_repayable": 631935.0,
+      "total_interest": 431935.0,
+      "month_interest": 2000.0,
+      "month_principal": 106.45,
+      "closing_balance": 199893.55,
+      "penalty": 5996.81
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "RAT_023",
+    "description": "Rate sensitivity 13.0% on \u00a3200k over 25y month 1",
+    "category": "rate_sensitivity",
+    "inputs": {
+      "principal": 200000.0,
+      "annual_rate": 0.13,
+      "term_years": 25,
+      "repayment_month": 1,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 2255.67,
+      "total_repayable": 676701.0,
+      "total_interest": 476701.0,
+      "month_interest": 2166.67,
+      "month_principal": 89.0,
+      "closing_balance": 199911.0,
+      "penalty": 5997.33
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "RAT_024",
+    "description": "Rate sensitivity 14.0% on \u00a3200k over 25y month 1",
+    "category": "rate_sensitivity",
+    "inputs": {
+      "principal": 200000.0,
+      "annual_rate": 0.14,
+      "term_years": 25,
+      "repayment_month": 1,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 2407.52,
+      "total_repayable": 722256.0,
+      "total_interest": 522256.0,
+      "month_interest": 2333.33,
+      "month_principal": 74.19,
+      "closing_balance": 199925.81,
+      "penalty": 5997.77
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "RAT_025",
+    "description": "Rate sensitivity 15.0% on \u00a3200k over 25y month 1",
+    "category": "rate_sensitivity",
+    "inputs": {
+      "principal": 200000.0,
+      "annual_rate": 0.15,
+      "term_years": 25,
+      "repayment_month": 1,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 2561.66,
+      "total_repayable": 768498.0,
+      "total_interest": 568498.0,
+      "month_interest": 2500.0,
+      "month_principal": 61.66,
+      "closing_balance": 199938.34,
+      "penalty": 5998.15
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "VAL_001",
+    "description": "VAL negative principal",
+    "category": "validation_extended",
+    "inputs": {
+      "principal": -50000.0,
+      "annual_rate": 0.05,
+      "term_years": 25,
+      "repayment_month": 1,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 1,
+      "monthly_payment": 0.0,
+      "total_repayable": 0.0,
+      "total_interest": 0.0,
+      "month_interest": 0.0,
+      "month_principal": 0.0,
+      "closing_balance": 0.0,
+      "penalty": 0.0
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "VAL_002",
+    "description": "VAL negative rate",
+    "category": "validation_extended",
+    "inputs": {
+      "principal": 200000.0,
+      "annual_rate": -0.05,
+      "term_years": 25,
+      "repayment_month": 1,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 2,
+      "monthly_payment": 0.0,
+      "total_repayable": 0.0,
+      "total_interest": 0.0,
+      "month_interest": 0.0,
+      "month_principal": 0.0,
+      "closing_balance": 0.0,
+      "penalty": 0.0
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "VAL_003",
+    "description": "VAL negative term",
+    "category": "validation_extended",
+    "inputs": {
+      "principal": 200000.0,
+      "annual_rate": 0.05,
+      "term_years": -10,
+      "repayment_month": 1,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 3,
+      "monthly_payment": 0.0,
+      "total_repayable": 0.0,
+      "total_interest": 0.0,
+      "month_interest": 0.0,
+      "month_principal": 0.0,
+      "closing_balance": 0.0,
+      "penalty": 0.0
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "VAL_004",
+    "description": "VAL negative month",
+    "category": "validation_extended",
+    "inputs": {
+      "principal": 200000.0,
+      "annual_rate": 0.05,
+      "term_years": 25,
+      "repayment_month": -1,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 4,
+      "monthly_payment": 0.0,
+      "total_repayable": 0.0,
+      "total_interest": 0.0,
+      "month_interest": 0.0,
+      "month_principal": 0.0,
+      "closing_balance": 0.0,
+      "penalty": 0.0
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "VAL_005",
+    "description": "VAL principal 0.01 boundary pass",
+    "category": "validation_extended",
+    "inputs": {
+      "principal": 0.01,
+      "annual_rate": 0.05,
+      "term_years": 1,
+      "repayment_month": 1,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 0.0,
+      "total_repayable": 0.0,
+      "total_interest": -0.01,
+      "month_interest": 0.0,
+      "month_principal": 0.0,
+      "closing_balance": 0.01,
+      "penalty": 0.0
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "VAL_006",
+    "description": "VAL principal 9999999.99 pass",
+    "category": "validation_extended",
+    "inputs": {
+      "principal": 9999999.99,
+      "annual_rate": 0.01,
+      "term_years": 1,
+      "repayment_month": 1,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 837854.11,
+      "total_repayable": 10054249.32,
+      "total_interest": 54249.33,
+      "month_interest": 8333.33,
+      "month_principal": 829520.78,
+      "closing_balance": 9170479.21,
+      "penalty": 275114.38
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "VAL_007",
+    "description": "VAL principal 10000000.00 fail",
+    "category": "validation_extended",
+    "inputs": {
+      "principal": 10000000.0,
+      "annual_rate": 0.05,
+      "term_years": 25,
+      "repayment_month": 1,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 1,
+      "monthly_payment": 0.0,
+      "total_repayable": 0.0,
+      "total_interest": 0.0,
+      "month_interest": 0.0,
+      "month_principal": 0.0,
+      "closing_balance": 0.0,
+      "penalty": 0.0
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "VAL_008",
+    "description": "VAL rate 0.000001 near-zero pass",
+    "category": "validation_extended",
+    "inputs": {
+      "principal": 100000.0,
+      "annual_rate": 1e-06,
+      "term_years": 25,
+      "repayment_month": 1,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 333.34,
+      "total_repayable": 100002.0,
+      "total_interest": 2.0,
+      "month_interest": 0.01,
+      "month_principal": 333.33,
+      "closing_balance": 99666.67,
+      "penalty": 2990.0
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "VAL_009",
+    "description": "VAL term 1 minimum pass",
+    "category": "validation_extended",
+    "inputs": {
+      "principal": 50000.0,
+      "annual_rate": 0.05,
+      "term_years": 1,
+      "repayment_month": 1,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 4280.37,
+      "total_repayable": 51364.44,
+      "total_interest": 1364.44,
+      "month_interest": 208.33,
+      "month_principal": 4072.04,
+      "closing_balance": 45927.96,
+      "penalty": 1377.84
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "VAL_010",
+    "description": "VAL term 0 fail",
+    "category": "validation_extended",
+    "inputs": {
+      "principal": 200000.0,
+      "annual_rate": 0.05,
+      "term_years": 0,
+      "repayment_month": 1,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 3,
+      "monthly_payment": 0.0,
+      "total_repayable": 0.0,
+      "total_interest": 0.0,
+      "month_interest": 0.0,
+      "month_principal": 0.0,
+      "closing_balance": 0.0,
+      "penalty": 0.0
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "VAL_011",
+    "description": "VAL month 1 minimum pass",
+    "category": "validation_extended",
+    "inputs": {
+      "principal": 200000.0,
+      "annual_rate": 0.05,
+      "term_years": 25,
+      "repayment_month": 1,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 1169.18,
+      "total_repayable": 350754.0,
+      "total_interest": 150754.0,
+      "month_interest": 833.33,
+      "month_principal": 335.85,
+      "closing_balance": 199664.15,
+      "penalty": 5989.92
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "VAL_012",
+    "description": "VAL month equals term*12 pass",
+    "category": "validation_extended",
+    "inputs": {
+      "principal": 200000.0,
+      "annual_rate": 0.05,
+      "term_years": 25,
+      "repayment_month": 300,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 1169.18,
+      "total_repayable": 350754.0,
+      "total_interest": 150754.0,
+      "month_interest": 4.85,
+      "month_principal": 1164.33,
+      "closing_balance": 0.02,
+      "penalty": 0.0
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "VAL_013",
+    "description": "VAL month term*12+1 fail",
+    "category": "validation_extended",
+    "inputs": {
+      "principal": 200000.0,
+      "annual_rate": 0.05,
+      "term_years": 25,
+      "repayment_month": 301,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 4,
+      "monthly_payment": 0.0,
+      "total_repayable": 0.0,
+      "total_interest": 0.0,
+      "month_interest": 0.0,
+      "month_principal": 0.0,
+      "closing_balance": 0.0,
+      "penalty": 0.0
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "VAL_014",
+    "description": "VAL rate type X invalid",
+    "category": "validation_extended",
+    "inputs": {
+      "principal": 200000.0,
+      "annual_rate": 0.05,
+      "term_years": 25,
+      "repayment_month": 1,
+      "rate_type": "X"
+    },
+    "expected": {
+      "return_code": 4,
+      "monthly_payment": 0.0,
+      "total_repayable": 0.0,
+      "total_interest": 0.0,
+      "month_interest": 0.0,
+      "month_principal": 0.0,
+      "closing_balance": 0.0,
+      "penalty": 0.0
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "VAL_015",
+    "description": "VAL rate type empty string",
+    "category": "validation_extended",
+    "inputs": {
+      "principal": 200000.0,
+      "annual_rate": 0.05,
+      "term_years": 25,
+      "repayment_month": 1,
+      "rate_type": ""
+    },
+    "expected": {
+      "return_code": 4,
+      "monthly_payment": 0.0,
+      "total_repayable": 0.0,
+      "total_interest": 0.0,
+      "month_interest": 0.0,
+      "month_principal": 0.0,
+      "closing_balance": 0.0,
+      "penalty": 0.0
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "VAL_016",
+    "description": "VAL all fields max valid",
+    "category": "validation_extended",
+    "inputs": {
+      "principal": 9999999.99,
+      "annual_rate": 0.999999,
+      "term_years": 40,
+      "repayment_month": 480,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 833332.5,
+      "total_repayable": 399999600.0,
+      "total_interest": 389999600.01,
+      "month_interest": 833332.5,
+      "month_principal": 0.0,
+      "closing_balance": 9999999.99,
+      "penalty": 0.0
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "VAL_017",
+    "description": "VAL float precision principal",
+    "category": "validation_extended",
+    "inputs": {
+      "principal": 200000.005,
+      "annual_rate": 0.05251,
+      "term_years": 25,
+      "repayment_month": 1,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 0,
+      "monthly_payment": 1198.61,
+      "total_repayable": 359583.0,
+      "total_interest": 159583.0,
+      "month_interest": 875.17,
+      "month_principal": 323.44,
+      "closing_balance": 199676.57,
+      "penalty": 5990.3
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "VAL_018",
+    "description": "VAL very large rate overflow",
+    "category": "validation_extended",
+    "inputs": {
+      "principal": 200000.0,
+      "annual_rate": 100.0,
+      "term_years": 25,
+      "repayment_month": 1,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 2,
+      "monthly_payment": 0.0,
+      "total_repayable": 0.0,
+      "total_interest": 0.0,
+      "month_interest": 0.0,
+      "month_principal": 0.0,
+      "closing_balance": 0.0,
+      "penalty": 0.0
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "VAL_019",
+    "description": "VAL string principal",
+    "category": "validation_extended",
+    "inputs": {
+      "principal": "abc",
+      "annual_rate": 0.05,
+      "term_years": 25,
+      "repayment_month": 1,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 1,
+      "monthly_payment": 0.0,
+      "total_repayable": 0.0,
+      "total_interest": 0.0,
+      "month_interest": 0.0,
+      "month_principal": 0.0,
+      "closing_balance": 0.0,
+      "penalty": 0.0
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "VAL_020",
+    "description": "VAL string rate",
+    "category": "validation_extended",
+    "inputs": {
+      "principal": 200000.0,
+      "annual_rate": "abc",
+      "term_years": 25,
+      "repayment_month": 1,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 2,
+      "monthly_payment": 0.0,
+      "total_repayable": 0.0,
+      "total_interest": 0.0,
+      "month_interest": 0.0,
+      "month_principal": 0.0,
+      "closing_balance": 0.0,
+      "penalty": 0.0
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "VAL_021",
+    "description": "VAL string term",
+    "category": "validation_extended",
+    "inputs": {
+      "principal": 200000.0,
+      "annual_rate": 0.05,
+      "term_years": "abc",
+      "repayment_month": 1,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 3,
+      "monthly_payment": 0.0,
+      "total_repayable": 0.0,
+      "total_interest": 0.0,
+      "month_interest": 0.0,
+      "month_principal": 0.0,
+      "closing_balance": 0.0,
+      "penalty": 0.0
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "VAL_022",
+    "description": "VAL string month",
+    "category": "validation_extended",
+    "inputs": {
+      "principal": 200000.0,
+      "annual_rate": 0.05,
+      "term_years": 25,
+      "repayment_month": "abc",
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 4,
+      "monthly_payment": 0.0,
+      "total_repayable": 0.0,
+      "total_interest": 0.0,
+      "month_interest": 0.0,
+      "month_principal": 0.0,
+      "closing_balance": 0.0,
+      "penalty": 0.0
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "VAL_023",
+    "description": "VAL None principal",
+    "category": "validation_extended",
+    "inputs": {
+      "principal": null,
+      "annual_rate": 0.05,
+      "term_years": 25,
+      "repayment_month": 1,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 1,
+      "monthly_payment": 0.0,
+      "total_repayable": 0.0,
+      "total_interest": 0.0,
+      "month_interest": 0.0,
+      "month_principal": 0.0,
+      "closing_balance": 0.0,
+      "penalty": 0.0
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "VAL_024",
+    "description": "VAL None rate",
+    "category": "validation_extended",
+    "inputs": {
+      "principal": 200000.0,
+      "annual_rate": null,
+      "term_years": 25,
+      "repayment_month": 1,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 2,
+      "monthly_payment": 0.0,
+      "total_repayable": 0.0,
+      "total_interest": 0.0,
+      "month_interest": 0.0,
+      "month_principal": 0.0,
+      "closing_balance": 0.0,
+      "penalty": 0.0
+    },
+    "status": "GENERATED"
+  },
+  {
+    "id": "VAL_025",
+    "description": "VAL None term",
+    "category": "validation_extended",
+    "inputs": {
+      "principal": 200000.0,
+      "annual_rate": 0.05,
+      "term_years": null,
+      "repayment_month": 1,
+      "rate_type": "F"
+    },
+    "expected": {
+      "return_code": 3,
+      "monthly_payment": 0.0,
+      "total_repayable": 0.0,
+      "total_interest": 0.0,
+      "month_interest": 0.0,
+      "month_principal": 0.0,
+      "closing_balance": 0.0,
+      "penalty": 0.0
+    },
+    "status": "GENERATED"
+  }
+]
