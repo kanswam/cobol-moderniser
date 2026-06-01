@@ -242,6 +242,8 @@ Open an issue to discuss before submitting a PR.
 - **Tested on**: IBM mainframe COBOL (fixed format, columns 7-72)
 - **Docker**: Docker and docker-compose support available (see Docker section above)
 - **Cost tracking**: API costs are tracked automatically per pipeline run
+- See [LIMITATIONS.md](LIMITATIONS.md) for a complete, 
+honest assessment of current scope and roadmap.
 
 ---
 
