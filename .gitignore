@@ -18,7 +18,7 @@ ENV/
 # Generated files (produced by pipeline runs)
 agents/parser_output.json
 agents/logic_output.json
-tests/generated/*.json
+tests/generated/extended_test_cases.json
 output/*.py
 output/validation_report.*
 
