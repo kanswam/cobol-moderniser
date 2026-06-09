@@ -367,6 +367,8 @@ See [LIMITATIONS.md](LIMITATIONS.md) for a complete, honest assessment of curren
 - [x] Cost tracking per agent
 - [x] Agent 6 — Simplifier: readable, maintainable Python output
 - [x] Agent 7 — Externaliser: business rules as YAML / JSON / Markdown
+- [ ] - [ ] Python hardening — type hints, logging, 
+      exception handling, input sanitisation
 - [ ] Dependency visualiser (Mermaid diagrams from parser output)
 - [ ] Support Java target language
 - [ ] EXEC SQL support
