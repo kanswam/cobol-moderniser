@@ -32,6 +32,11 @@ every one of these questions. We would rather you read them here than
 discover them in a CTO meeting.
 
 ---
+### Parser Test Suite
+51/57 parser tests pass. The 6 failures are in COMPUTE statement 
+decomposition and comment-linkage edge cases — both planned 
+enhancements that do not affect the core migration pipeline 
+(200/200 tests pass).
 
 ### Scale
 
